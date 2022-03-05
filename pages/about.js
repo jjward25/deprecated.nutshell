@@ -29,7 +29,7 @@ export default function About() {
             {`This is smarter coverage for smarter people to promote better living.  This is Adult Education - detailed, useful information with no agenda or slant.`}
             <br />
             <br />
-            {`Casually Adept is news for people who hate the news.`}
+            {`Nutshell News is news for people who hate the news.`}
           </p>
         </div>
       </main>
