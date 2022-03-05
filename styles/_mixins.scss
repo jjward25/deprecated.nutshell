@@ -1,0 +1,46 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 2400px) {
+    @content;
+  }
+}
+
+@mixin color-dark {
+  background-color: #112f4c;
+  color: #112f4c;
+}
+
+@mixin multicolor-text2 {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(50, 50, 85),
+    rgb(50, 50, 85),
+    rgb(61, 61, 88),
+    rgb(61, 61, 88),
+    rgb(95, 95, 124),
+    rgb(95, 95, 124),
+    white,
+    white,
+    white,
+    white
+  );
+}

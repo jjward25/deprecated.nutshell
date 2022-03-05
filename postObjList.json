@@ -1,0 +1,598 @@
+[
+  {
+    "PostName": "Hurricane",
+    "PostPriority": 2,
+    "PostDate": "11/4/2021",
+    "PostUpDate": "",
+    "Category": "Ongoing News",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "How big is it?",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Hurricane Ida is expected to land as a Category 4 this afternoon in Louisiana.",
+            "BulletPriority": 1,
+            "BulletCite": "NYT",
+            "BulletLink": "www.nytimes.com",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Data Science",
+    "PostPriority": 1,
+    "PostDate": "11/3/2021",
+    "PostUpDate": "",
+    "Category": "Professional Development",
+    "Section": "Life",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Skills by Salary Range",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "For an entry level, no skills may be necessary, but the most basic skills you can get include Excel and then SQL as the most basic coding language.  Excel is considered a minimum for any data role, and having some experience with SQL should help you land one of the better entry-level roles at around 50-65k.",
+            "BulletPriority": 1,
+            "BulletCite": "GlassDoor",
+            "BulletLink": "www.glassdoor.com",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Hubble Telescope",
+    "PostPriority": 1,
+    "PostDate": "11/3/2021",
+    "PostUpDate": "",
+    "Category": "Space",
+    "Section": "Academic",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Maintenance",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Entered safe mode again",
+            "BulletPriority": 1,
+            "BulletCite": "NASA",
+            "BulletLink": "www.nasa.gov",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "How to Vote",
+    "PostPriority": 1,
+    "PostDate": "11/3/2021",
+    "PostUpDate": "",
+    "Category": "Ongoing News",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 0,
+        "BulletArray": [
+          {
+            "BulletText": "This article is intended to highlight the typical responsibilities and powers of elected representatives at different levels of government.  From there, you can determine who you want in what position.",
+            "BulletPriority": 1,
+            "BulletCite": "",
+            "BulletLink": "",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Congress",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "The House of Representatives has the right to impeach government officials (prosecutor), while the Senate conducts the trials (judge and jury).  ",
+            "BulletPriority": 1,
+            "BulletCite": "Senate.gov",
+            "BulletLink": "https://www.senate.gov/history/powers.htm",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The Senate \"advises and consents\" to the President's choices for \"Ambassadors, other public Ministers and Consuls, Judges of the Supreme Court, and all other Officers of the United States\", like the Attorney General and other important bureaucratic roles.",
+            "BulletPriority": 2,
+            "BulletCite": "Senate.gov",
+            "BulletLink": "https://www.senate.gov/history/powers.htm",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "While the President has the power to enter into certain agreements without Congressional approval, the Senate does have the power to ratify and amend treaties with a 2/3 majority.",
+            "BulletPriority": 3,
+            "BulletCite": "Senate.gov",
+            "BulletLink": "https://www.senate.gov/history/powers.htm",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Each house of Congress has the power to investigate a wide array of issues and to introduce legislation. Both houses must pass the same bill to send the bill to the President to be signed into law.",
+            "BulletPriority": 4,
+            "BulletCite": "Senate.gov",
+            "BulletLink": "https://www.senate.gov/artandhistory/history/common/briefing/Investigations.htm",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The House initiates revenue bills, including talks about the annual budget for the country.  The House also has the authority to elect a President in the case of an electoral tie.",
+            "BulletPriority": 5,
+            "BulletCite": "Whitehouse.gov",
+            "BulletLink": "https://www.whitehouse.gov/about-the-white-house/the-legislative-branch/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Executive Branch agencies issue regulations with the full force of law, but these are only under the authority of laws enacted by Congress. The President may veto bills Congress passes, but Congress may also override a veto by a two-thirds vote in both the Senate and the House of Representatives.",
+            "BulletPriority": 6,
+            "BulletCite": "Whitehouse.gov",
+            "BulletLink": "https://www.whitehouse.gov/about-the-white-house/the-legislative-branch/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Part of Congress\u2019s exercise of legislative authority is the establishment of an annual budget for the government. To this end, Congress levies taxes and tariffs to provide funding for essential government services or borrows.",
+            "BulletPriority": 7,
+            "BulletCite": "Whitehouse.gov",
+            "BulletLink": "https://www.whitehouse.gov/about-the-white-house/the-legislative-branch/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The House Committee on Oversight and Government Reform and the Senate Committee on Homeland Security and Government Affairs are both devoted to overseeing and reforming government operations, and each committee conducts oversight in its policy area.  Congress also maintains an investigative organization, the Government Accountability Office (GAO).",
+            "BulletPriority": 8,
+            "BulletCite": "Whitehouse.gov",
+            "BulletLink": "https://www.whitehouse.gov/about-the-white-house/the-legislative-branch/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The House tends to bring bills through relevant committees whereas the Senate has more open and broad debates.  ",
+            "BulletPriority": 9,
+            "BulletCite": "VoteSmart",
+            "BulletLink": "https://votesmart.org/education/congress",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "7-28-2020",
+    "PostPriority": 1,
+    "PostDate": "7/28/2020",
+    "PostUpDate": "",
+    "Category": "Current Events",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Domestic News",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "National Teachers union announces support for teachers striking in districts without proper safety measures in place.  The union wants to wait to re-open schools until the community transmission rate runs under 1% and the average daily rates stay under 5%.",
+            "BulletPriority": 1,
+            "BulletCite": "NYT",
+            "BulletLink": "https://www.nytimes.com/2020/07/28/world/coronavirus-covid-19.html?action=click&module=Top%20Stories&pgtype=Homepage",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Attoney General William Barr set to testify in Congress.",
+            "BulletPriority": 2,
+            "BulletCite": "NYT",
+            "BulletLink": "https://www.nytimes.com/2020/07/28/us/politics/william-barr-house-judiciary-hearing.html?action=click&module=Top%20Stories&pgtype=Homepage",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Biden unveils plans to boost finances for blacks and latinos.",
+            "BulletPriority": 3,
+            "BulletCite": "WaPo",
+            "BulletLink": "https://www.washingtonpost.com/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "President Trump tweets support of drug Hydroxychloroquine despite FDA statements that the drug is not effective as a Coronavirus treatment.",
+            "BulletPriority": 4,
+            "BulletCite": "AP",
+            "BulletLink": "https://apnews.com/80130998284858a7b73c997e76677137",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Pharmacy chain Rite-Aid has installed facial recognition montoring in their stores for roughly 8 years now, though say they have since turned the cameras off.",
+            "BulletPriority": 5,
+            "BulletCite": "Reuters",
+            "BulletLink": "https://www.reuters.com/investigates/special-report/usa-riteaid-software/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "International",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "How countries are re-opening schools",
+            "BulletPriority": 1,
+            "BulletCite": "CFR",
+            "BulletLink": "https://www.cfr.org/backgrounder/how-countries-are-reopening-schools-during-pandemic",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Chinese ambassador struggles to explain photos of blindfolded prisoners being loaded on trains.  The photos have been verified by intelligence agencies.",
+            "BulletPriority": 2,
+            "BulletCite": "Axios",
+            "BulletLink": "https://www.axios.com/chinese-ambassador-xinjiang-blindfolded-prisoners-27403813-0677-4abd-bfe6-f61516f13fbc.html",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Coronavirus-linked hunger tied to 10,000 child deaths each month.  An additional 550,000 are likely being struck by \"wasting\", which over the course of the year would increase the total to 53 million who are severaly malunutritioned globally.",
+            "BulletPriority": 3,
+            "BulletCite": "AP",
+            "BulletLink": "https://apnews.com/5cbee9693c52728a3808f4e7b4965cbd",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Group of Brazilian medical unions request the International Criminal Courts invesitigate President Jair Bolsanaro's response to the Coronavirus.",
+            "BulletPriority": 4,
+            "BulletCite": "Al-Jazeera",
+            "BulletLink": "https://www.aljazeera.com/news/2020/07/brazil-medics-seek-icc-probe-bolsonaro-gov-covid-19-response-200728070931384.html",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Malaysia's former Prime Minister convicted of 7 counts of financial crimes, sentenced to 12 years.",
+            "BulletPriority": 5,
+            "BulletCite": "Economist",
+            "BulletLink": "https://www.economist.com/asia/2020/07/28/najib-razak-is-convicted-on-seven-charges-in-the-1mdb-scandal",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Business",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "US consumer confidence drops more than forecasted.  Consumer confidence is a key metric for economic health and recovery prospects.",
+            "BulletPriority": 1,
+            "BulletCite": "Bloomberg",
+            "BulletLink": "https://www.bloomberg.com/news/articles/2020-07-28/u-s-consumer-confidence-fell-in-july-as-expectations-slumped?srnd=premium",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "STEM",
+        "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "Quantum tunneling is not instantaneous.",
+            "BulletPriority": 1,
+            "BulletCite": "Scientific American",
+            "BulletLink": "https://www.scientificamerican.com/article/quantum-tunneling-is-not-instantaneous-physicists-show/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Experimental blood test looking for stomach, esophogeal, colorectal, lung and liver cancers can detect the disease up to 4 years before symptoms appear.",
+            "BulletPriority": 2,
+            "BulletCite": "Scientific American",
+            "BulletLink": "https://www.scientificamerican.com/article/experimental-blood-test-detects-cancer-up-to-four-years-before-symptoms-appear/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Scientistis publish first-ever images of multiple planets around a sunlike star.",
+            "BulletPriority": 3,
+            "BulletCite": "Scientific American",
+            "BulletLink": "https://www.scientificamerican.com/article/scientists-unveil-first-ever-pictures-of-multiple-planets-around-a-sunlike-star/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "China successfully launches their own Mars mission.",
+            "BulletPriority": 4,
+            "BulletCite": "Nature",
+            "BulletLink": "https://www.nature.com/articles/d41586-020-02187-7",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "7-29-2020",
+    "PostPriority": 2,
+    "PostDate": "7/29/2020",
+    "PostUpDate": "",
+    "Category": "Current Events",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Domestic News",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Many large retailers are not enforcing mask policies despite claims of concern for employee safety and medical research supporting the use of masks.",
+            "BulletPriority": 1,
+            "BulletCite": "NYT",
+            "BulletLink": "https://www.nytimes.com/2020/07/29/world/coronavirus-covid-19.html?action=click&module=Top%20Stories&pgtype=Homepage",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "President Trump did not raise the issue of Russia placing bounties on US soldiers when he spoke with Russian President Vladimir Putin last week.  According to Trump, \"many people said that's fake news.\"",
+            "BulletPriority": 2,
+            "BulletCite": "Politico",
+            "BulletLink": "https://www.politico.com/news/2020/07/29/trump-russian-bounties-putin-call-385925",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "In California, retail and office real estate expected to experience price drops but the tight housing market will likely remain about the same.",
+            "BulletPriority": 3,
+            "BulletCite": "LA Times",
+            "BulletLink": "https://www.latimes.com/business/story/2020-07-29/office-rents-california-apartment-rent-prices-real-estate",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "International",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "There is some concern that North Korea may use the Coronavirus as an opportunity to acquire equipment for biological warfare, converting legitimate vaccine machines after the virus is controlled.",
+            "BulletPriority": 1,
+            "BulletCite": "Politico",
+            "BulletLink": "https://www.politico.com/news/magazine/2020/07/28/north-korea-coronavirus-vaccine-385096",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The EU has decided to limit exports to China of certain equipment that could be used for surveillance.  The move is a response to the \"extensive erosion of rights and [fundamental] freedoms\" in Hong Kong.",
+            "BulletPriority": 2,
+            "BulletCite": "Politico",
+            "BulletLink": "https://www.politico.com/news/2020/07/28/eu-to-limit-export-of-sensitive-tech-in-response-to-hong-kong-security-law-384978",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "North Korea is expanding their state hacking apparatus.",
+            "BulletPriority": 3,
+            "BulletCite": "ArsTechnica",
+            "BulletLink": "https://arstechnica.com/information-technology/2020/07/north-korea-backed-hackers-dip-their-toes-into-the-ransomware-pool/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Business",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "The US Housing market looks relatively healthy as borrowing costs fall, pending home sales exceed forecast.",
+            "BulletPriority": 1,
+            "BulletCite": "Bloomberg",
+            "BulletLink": "https://www.bloomberg.com/news/articles/2020-07-29/u-s-pending-home-sales-exceed-forecast-as-mortgage-rates-fall?srnd=premium",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Universal Studios is shortening the time it takes for their movies to go from theaters to online, from 75 days to 17. ",
+            "BulletPriority": 2,
+            "BulletCite": "WSJ",
+            "BulletLink": "https://www.wsj.com/articles/amc-universal-agree-to-trim-theatrical-window-before-movies-go-online-11595968517?mod=business_lead_pos5",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "STEM",
+        "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "The U.S. Food and Drug Administration continues to warn consumers and health care professionals not to use certain alcohol-based hand sanitizers due to the dangerous presence of methanol, or wood alcohol \u2013 a substance often used to create fuel and antifreeze that can be toxic when absorbed through the skin as well as life-threatening when ingested.",
+            "BulletPriority": 1,
+            "BulletCite": "FDA",
+            "BulletLink": "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-reiterates-warning-about-dangerous-alcohol-based-hand-sanitizers",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "A German startup unveils a modular electric vehicle.",
+            "BulletPriority": 2,
+            "BulletCite": "Axios",
+            "BulletLink": "https://www.axios.com/ebussy-electric-brands-modular-b206e900-62a1-44a4-9a5f-916c57318426.html",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Former FDA head says \"we can definitively say hydroxychloroquine doesn't work.\"  The drug has been promoted by the Trump family.",
+            "BulletPriority": 3,
+            "BulletCite": "Axios",
+            "BulletLink": "https://www.axios.com/hydroxychloroquine-coronavirus-scott-gottlieb-trump-a7b60575-91db-4239-8c86-59b993c55358.html",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Pluto is 10 times smaller than we thought.",
+            "BulletPriority": 4,
+            "BulletCite": "Scientific American",
+            "BulletLink": "https://www.scientificamerican.com/article/poor-pluto-is-ten-times-smaller-than-thought/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "The National Debt",
+    "PostPriority": 1,
+    "PostDate": "10/21/2021",
+    "PostUpDate": "",
+    "Category": "Policy Issues",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "What is the National Debt",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "In simple terms, the National Debt is the debt our country incurs when annual tax revenue is less than annual expenses.",
+            "BulletPriority": 1,
+            "BulletCite": "The Balance",
+            "BulletLink": "https://www.thebalance.com/interest-on-the-national-debt-4119024",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "One way the debt grows is by the government issuing new debt, called government bonds.  These are ways that foreign governments and companies can invest in American growth without having to invest directly in the US stock market, which is higher risk.  The government takes cash from these investors and uses it to fund government programs, paying it back with interest in the future.  Ideally, the programs the money gets spent on create more GDP growth (productivity) and quality of life than the interest is worth.",
+            "BulletPriority": 2,
+            "BulletCite": "The Balance",
+            "BulletLink": "https://www.thebalance.com/what-is-the-public-debt-3306294",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "In theory, the government could print more money to fund projects, but that causes inflation, where because there are more dollars to go around, prices go up. This is why governments sell debt to raise money, there\u2019s more price control.",
+            "BulletPriority": 3,
+            "BulletCite": "NPR",
+            "BulletLink": "https://www.thebalance.com/what-is-the-public-debt-3306294",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Why People are Concerned",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "When the interest rates on the National Debt increases, the interest rates also rise for private borrowers. This is why many companies want the National Debt to remain in a reasonable range, as over-borrowing could hurt the US\u2019s credit rating and result in higher interest rates.",
+            "BulletPriority": 1,
+            "BulletCite": "The Balance",
+            "BulletLink": "https://www.npr.org/templates/story/story.php?storyId=99927343",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "Debt can also become unsustainable.  If the US defaults on any obligations Possible reasons for default include Congress failing to pass a budget, or interest rates get raised causing us to lose access to cheap (low-interest) cash, meaning everything for everyone gets a little more expensive and austerity measures may be required.",
+            "BulletPriority": 2,
+            "BulletCite": "The Balance",
+            "BulletLink": "https://www.thebalance.com/what-is-the-public-debt-3306294",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The national debt has been increasing for decades, mostly driven by tax cuts (which reduce revenue and are politically popular) with no reduction in spending (because cutting programs to pay for tax cuts is not popular).",
+            "BulletPriority": 3,
+            "BulletCite": "Wikipedia",
+            "BulletLink": "https://en.wikipedia.org/wiki/History_of_the_United_States_public_debt",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "That said, there is not really an agreed upon point where debt becomes too much or why more debt is bad if its return (in terms of productivity / GDP) is higher than the cost (interest). ",
+            "BulletPriority": 4,
+            "BulletCite": "Carnegie Endowment",
+            "BulletLink": "https://carnegieendowment.org/chinafinancialmarkets/78304",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Pros & Cons of Running a Deficit",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "The biggest pro of keeping debt is having more cash to spend.  Ideally, our government is spending that cash in ways that increase the quality of life and economic output in America creating more wealth than the interest on the loans take away.  Debt used to fund consumption helps the current generation, while debt used to fund economic expansion help current and future generations.",
+            "BulletPriority": 1,
+            "BulletCite": "Investopedia",
+            "BulletLink": "https://www.investopedia.com/updates/usa-national-debt/",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "The con is primarily that excessive debt will harm our credit rating and raise interest rates, potentially causing a spiral where we have less money to spend (which means less investment/growth) which eventually could lead to defaults and a worse rating and a downward economic spiral.",
+            "BulletPriority": 2,
+            "BulletCite": "Carnegie Endowment",
+            "BulletLink": "https://carnegieendowment.org/chinafinancialmarkets/78304",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "These reasons are why debt is often measured against GDP, because it\u2019s benefits and risks are so closely tied to productivity.",
+            "BulletPriority": 3,
+            "BulletCite": "Investopedia",
+            "BulletLink": "https://www.investopedia.com/terms/g/gdp.asp",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Current State of the Deficit",
+        "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "The National Debt is currently over $22 trillion.  That\u2019s more than our annual GDP of ~$20 trillion.  This gives us a debt-to-GDP ratio of about 1.1 to 1.",
+            "BulletPriority": 1,
+            "BulletCite": "The Hill",
+            "BulletLink": "https://thehill.com/opinion/finance/431493-the-good-the-bad-and-the-ugly-of-22-trillion-in-debt",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "If our debt ratio was 1 to 1 (better than current), our interest was 3% (probably worse) and GDP grew at 2% (2.9% in 2018) then we would need a budget surplus of 1% to maintain debt levels.  If our debt ratio was 3 to 1 (much worse, $60 trillion to $20 trillion), we would need a surplus of 3% of GDP to maintain debt levels.",
+            "BulletPriority": 2,
+            "BulletCite": "The Hill",
+            "BulletLink": "https://thehill.com/opinion/finance/431493-the-good-the-bad-and-the-ugly-of-22-trillion-in-debt",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          },
+          {
+            "BulletText": "If interest rates went up instead of the debt level, say to 12% instead of 3%, it would require a 10% budget surplus. ",
+            "BulletPriority": 3,
+            "BulletCite": "The Hill",
+            "BulletLink": "https://thehill.com/opinion/finance/431493-the-good-the-bad-and-the-ugly-of-22-trillion-in-debt",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  }
+]
