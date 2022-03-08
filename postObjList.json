@@ -594,5 +594,29 @@
         ]
       }
     ]
+  },
+  {
+    "PostName": "Current Recalls",
+    "PostPriority": 1,
+    "PostDate": "3/5/2022",
+    "PostUpDate": "",
+    "Category": "Consumer Products",
+    "Section": "Life",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 0,
+        "BulletArray": [
+          {
+            "BulletText": "Introduction text",
+            "BulletPriority": 1,
+            "BulletCite": "",
+            "BulletLink": "",
+            "BulletPostDate": "3/5/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -6,7 +6,7 @@ export default function Academic() {
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content.Academic} />
+          <HomeVerticals section={Content[0].Academic} />
         </div>
       </main>
     </div>

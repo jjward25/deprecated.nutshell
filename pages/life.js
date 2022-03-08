@@ -6,7 +6,7 @@ export default function Life() {
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content.Life} />
+          <HomeVerticals section={Content[0].Life} />
         </div>
       </main>
     </div>

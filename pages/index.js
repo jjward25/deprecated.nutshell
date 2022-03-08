@@ -5,6 +5,8 @@ import CurrentEvents from "../front-components/current-events-card";
 import Content from "../content.json";
 
 export default function Home() {
+  console.log(Content[0].News);
+
   return (
     <div className={styles["container"]}>
       <Head>
@@ -29,7 +31,7 @@ export default function Home() {
         </div>
 
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content.News} />
+          <HomeVerticals section={Content[0].News} />
         </div>
       </main>
     </div>

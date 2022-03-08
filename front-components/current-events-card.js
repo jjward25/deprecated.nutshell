@@ -4,7 +4,7 @@ const ROUTE_POST_ID = "/[id]";
 import cePosts from "../cePostList.json";
 
 export default function CurrentEvents() {
-  //console.log(cePosts);
+  console.log(cePosts);
   return (
     <div className={styles["current-events"]}>
       <div className={styles["font-category-header"]}>Current Events </div>

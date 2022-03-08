@@ -16,17 +16,19 @@ export default function Article(props) {
 
   var relatedPosts = [];
   if (typeof post == "undefined") {
-    relatedPosts = Content["News"].filter(
+    relatedPosts = Content[0]["News"].filter(
       (category) => category.CategoryName == post.Category
     )[0].PostArray;
   } else {
-    relatedPosts = Content[post.Section].filter(
+    relatedPosts = Content[0][post.Section].filter(
       (category) => category.CategoryName == post.Category
     )[0].PostArray;
   }
 
   var intro = [];
   if (typeof postObjDict[router.query.id] == "undefined") {
+    console.log("router: " + str(router.query.id));
+    console.log("postObjDict: " + str(postObjDict));
   } else {
     intro = postObjDict[router.query.id].SubheaderArray.filter(
       (postObj) => postObj.SubheaderName == "Introduction"
