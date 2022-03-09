@@ -4,9 +4,9 @@ import HomeVerticals from "../front-components/home-vertical-content";
 import CurrentEvents from "../front-components/current-events-card";
 import Content from "../content.json";
 
-export default function Home() {
+export default function Home(props) {
   console.log(Content[0].News);
-
+  console.log(props.posts);
   return (
     <div className={styles["container"]}>
       <Head>
@@ -36,4 +36,18 @@ export default function Home() {
       </main>
     </div>
   );
+}
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/api/postObjList");
+  const posts = await res.json();
+
+  return {
+    props: {
+      posts,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
+  };
 }
