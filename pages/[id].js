@@ -2,13 +2,11 @@ import HomePostCard from "../front-components/home-post-card";
 import Image from "next/image";
 import styles from "../styles/Pages.module.scss";
 import { useRouter } from "next/router";
-import postObjDict from "../postObjDict.json";
-import Content from "../content.json";
 import Accordion from "../front-components/postAccordion";
-import postObjList from "../postObjList.json";
 
 export default function Article(props) {
-  //console.log(props.postData);
+  console.log(props.postObj);
+
   const router = useRouter();
   var post = props.postData[router.query.id];
   //console.log(post);
@@ -16,21 +14,21 @@ export default function Article(props) {
 
   var relatedPosts = [];
   if (typeof post == "undefined") {
-    relatedPosts = Content[0]["News"].filter(
+    relatedPosts = props.contentObj[0]["News"].filter(
       (category) => category.CategoryName == post.Category
     )[0].PostArray;
   } else {
-    relatedPosts = Content[0][post.Section].filter(
+    relatedPosts = props.contentObj[0][post.Section].filter(
       (category) => category.CategoryName == post.Category
     )[0].PostArray;
   }
 
   var intro = [];
-  if (typeof postObjDict[router.query.id] == "undefined") {
+  if (typeof props.postData[router.query.id] == "undefined") {
     console.log("router: " + str(router.query.id));
-    console.log("postObjDict: " + str(postObjDict));
+    console.log("postObjDict: " + str(props.postData));
   } else {
-    intro = postObjDict[router.query.id].SubheaderArray.filter(
+    intro = props.postData[router.query.id].SubheaderArray.filter(
       (postObj) => postObj.SubheaderName == "Introduction"
     );
   }
@@ -144,7 +142,9 @@ export default function Article(props) {
 }
 // Set the postNames to the path parameter for dynamic routes
 export const getStaticPaths = async () => {
-  const articles = await postObjList;
+  const articles = await (
+    await fetch("http://localhost:3000/api/postObjList")
+  ).json();
   const paths = articles.map((article) => ({
     params: { id: article.PostName },
   }));
@@ -157,12 +157,21 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (ctx) => {
   const articleId = ctx.params.id;
-  const postData = postObjDict;
+  const contentObj = await (
+    await fetch("http://localhost:3000/api/contentObj")
+  ).json();
+  const res = await fetch("http://localhost:3000/api/postObjList");
+  const posts = await res.json();
+  const postData = Object.assign(
+    {},
+    ...posts.map((val) => ({
+      [val.PostName]: val,
+    }))
+  );
 
   // fetch the data using the article id and return as props
-
   return {
-    props: { articleId, postData },
+    props: { articleId, postData, contentObj },
     revalidate: 10,
   };
 };

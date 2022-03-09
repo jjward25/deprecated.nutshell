@@ -2,11 +2,9 @@ import Head from "next/head";
 import styles from "../styles/Pages.module.scss";
 import HomeVerticals from "../front-components/home-vertical-content";
 import CurrentEvents from "../front-components/current-events-card";
-import Content from "../content.json";
 
 export default function Home(props) {
-  console.log(Content[0].News);
-  console.log(props.posts);
+  console.log(props.posts[0].News);
   return (
     <div className={styles["container"]}>
       <Head>
@@ -31,14 +29,14 @@ export default function Home(props) {
         </div>
 
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content[0].News} />
+          <HomeVerticals section={props.posts[0].News} />
         </div>
       </main>
     </div>
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/postObjList");
+  const res = await fetch("http://localhost:3000/api/contentObj");
   const posts = await res.json();
 
   return {
