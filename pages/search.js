@@ -1,5 +1,5 @@
-import HomePostCard from "../front-components/home-post-card";
-import HomePostCardExtension from "../front-components/home-post-card-extension";
+import HomePostCard from "../components/home-post-card";
+import HomePostCardExtension from "../components/home-post-card-extension";
 import styles from "../styles/Pages.module.scss";
 
 export default function Search() {

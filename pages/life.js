@@ -1,4 +1,4 @@
-import HomeVerticals from "../front-components/home-vertical-content";
+import HomeVerticals from "../components/home-vertical-content";
 import styles from "../styles/Pages.module.scss";
 
 export default function Life(props) {

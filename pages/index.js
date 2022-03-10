@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Pages.module.scss";
-import HomeVerticals from "../front-components/home-vertical-content";
-import CurrentEvents from "../front-components/current-events-card";
+import HomeVerticals from "../components/home-vertical-content";
+import CurrentEvents from "../components/current-events-card";
 
 export default function Home(props) {
-  console.log(props.posts[0].News);
   return (
     <div className={styles["container"]}>
       <Head>
@@ -16,7 +15,11 @@ export default function Home(props) {
         />
         <link rel="icon" href="/acorn.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href={`https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Contrail+One&family=Fredericka+the+Great&family=Julius+Sans+One&family=Montserrat:wght@500;600;700&family=Raleway+Dots&family=Raleway:wght@500&family=Sanchez&family=Stick+No+Bills:wght@500&display=swap`}
           rel="stylesheet"
@@ -25,7 +28,7 @@ export default function Home(props) {
 
       <main className={styles["main"]}>
         <div className={styles["home-top"]}>
-          <CurrentEvents />
+          <CurrentEvents ceBullets={props.cePosts} />
         </div>
 
         <div className={styles["home-content-wrap"]}>
@@ -39,9 +42,13 @@ export async function getStaticProps() {
   const res = await fetch("http://localhost:3000/api/contentObj");
   const posts = await res.json();
 
+  const res2 = await fetch("http://localhost:3000/api/cePosts");
+  const cePosts = await res2.json();
+
   return {
     props: {
       posts,
+      cePosts,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in

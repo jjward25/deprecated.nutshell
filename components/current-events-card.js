@@ -1,17 +1,15 @@
 import styles from "../styles/Components.module.scss";
 import Link from "next/link";
 const ROUTE_POST_ID = "/[id]";
-import cePosts from "../cePostList.json";
 
 export default function CurrentEvents(props) {
-  console.log(cePosts);
-  console.log(props.posts);
+  console.log(props.ceBullets);
   return (
     <div className={styles["current-events"]}>
       <div className={styles["font-category-header"]}>Current Events </div>
 
       <div className={styles["ce-card-wrap"]}>
-        {cePosts.map((post) => {
+        {props.ceBullets.map((post) => {
           return (
             <div
               className={styles["current-events-card"]}
@@ -69,9 +67,6 @@ export default function CurrentEvents(props) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/cePosts");
-  const posts = await res.json();
-
   return {
     props: {
       posts,

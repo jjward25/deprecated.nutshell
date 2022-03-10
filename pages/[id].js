@@ -1,12 +1,10 @@
-import HomePostCard from "../front-components/home-post-card";
+import HomePostCard from "../components/home-post-card";
 import Image from "next/image";
 import styles from "../styles/Pages.module.scss";
 import { useRouter } from "next/router";
-import Accordion from "../front-components/postAccordion";
+import Accordion from "../components/postAccordion";
 
 export default function Article(props) {
-  console.log(props.postObj);
-
   const router = useRouter();
   var post = props.postData[router.query.id];
   //console.log(post);
