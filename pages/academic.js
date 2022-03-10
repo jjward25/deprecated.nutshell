@@ -6,15 +6,15 @@ export default function Academic(props) {
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content[0].Academic} />
+          <HomeVerticals section={props.posts[0].Academic} />
         </div>
       </main>
     </div>
   );
 }
-/*
+
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/contentObj");
+  const res = await fetch("https://www.nutshell.news/api/contentObj");
   const posts = await res.json();
 
   return {
@@ -27,4 +27,3 @@ export async function getStaticProps() {
     revalidate: 10, // In seconds
   };
 }
-*/

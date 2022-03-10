@@ -1,20 +1,20 @@
 import HomeVerticals from "../components/home-vertical-content";
 import styles from "../styles/Pages.module.scss";
-import Content from "../content.json";
+
 export default function Life(props) {
   return (
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={Content[0].Life} />
+          <HomeVerticals section={props.posts[0].Life} />
         </div>
       </main>
     </div>
   );
 }
-/*
+
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/contentObj");
+  const res = await fetch("https://www.nutshell.news/api/contentObj");
   const posts = await res.json();
 
   return {
@@ -27,4 +27,3 @@ export async function getStaticProps() {
     revalidate: 10, // In seconds
   };
 }
-*/
