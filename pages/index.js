@@ -39,10 +39,10 @@ export default function Home(props) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/contentObj");
+  const res = await fetch("${VERCEL_URL}/api/contentObj");
   const posts = await res.json();
 
-  const res2 = await fetch("http://localhost:3000/api/cePosts");
+  const res2 = await fetch("${VERCEL_URL}/api/cePosts");
   const cePosts = await res2.json();
 
   return {
