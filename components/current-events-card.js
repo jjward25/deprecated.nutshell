@@ -3,7 +3,6 @@ import Link from "next/link";
 const ROUTE_POST_ID = "/[id]";
 
 export default function CurrentEvents(props) {
-  console.log(props.ceBullets);
   return (
     <div className={styles["current-events"]}>
       <div className={styles["font-category-header"]}>Current Events </div>

@@ -2,7 +2,11 @@ import Head from "next/head";
 import styles from "../styles/Pages.module.scss";
 import HomeVerticals from "../components/home-vertical-content";
 import CurrentEvents from "../components/current-events-card";
+import Content from "../content.json";
+import CEPOSTS from "../cePostList.json";
 
+//props.cePosts
+//props.posts[0].News
 export default function Home(props) {
   return (
     <div className={styles["container"]}>
@@ -28,21 +32,21 @@ export default function Home(props) {
 
       <main className={styles["main"]}>
         <div className={styles["home-top"]}>
-          <CurrentEvents ceBullets={props.cePosts} />
+          <CurrentEvents ceBullets={CEPOSTS} />
         </div>
 
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={props.posts[0].News} />
+          <HomeVerticals section={Content[0].News} />
         </div>
       </main>
     </div>
   );
 }
-export async function getStaticProps() {
-  const res = await fetch("${VERCEL_URL}/api/contentObj");
+/*export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/api/contentObj");
   const posts = await res.json();
 
-  const res2 = await fetch("${VERCEL_URL}/api/cePosts");
+  const res2 = await fetch("http://localhost:3000/api/cePosts");
   const cePosts = await res2.json();
 
   return {
@@ -55,4 +59,4 @@ export async function getStaticProps() {
     // - At most once every 10 seconds
     revalidate: 10, // In seconds
   };
-}
+}*/

@@ -3,14 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Pages.module.scss";
 import { useRouter } from "next/router";
 import Accordion from "../components/postAccordion";
-import postObjList from "../postObjList.json";
-import postObjDict from "../postObjDict.json";
-import ContentObje from "../content.json";
 
 export default function Article(props) {
   const router = useRouter();
   var post = props.postData[router.query.id];
-  //props.postData[router.query.id]
 
   var category = "";
 
@@ -144,7 +140,9 @@ export default function Article(props) {
 }
 // Set the postNames to the path parameter for dynamic routes
 export const getStaticPaths = async () => {
-  const articles = postObjList;
+  const articles = await (
+    await fetch("http://localhost:3000/api/postObjList")
+  ).json();
   const paths = articles.map((article) => ({
     params: { id: article.PostName },
   }));
@@ -157,9 +155,17 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (ctx) => {
   const articleId = ctx.params.id;
-  const contentObj = ContentObje;
-
-  const postData = postObjDict;
+  const contentObj = await (
+    await fetch("http://localhost:3000/api/contentObj")
+  ).json();
+  const res = await fetch("http://localhost:3000/api/postObjList");
+  const posts = await res.json();
+  const postData = Object.assign(
+    {},
+    ...posts.map((val) => ({
+      [val.PostName]: val,
+    }))
+  );
 
   // fetch the data using the article id and return as props
   return {
