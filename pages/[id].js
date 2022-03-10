@@ -142,7 +142,7 @@ export default function Article(props) {
 
 export const getStaticPaths = async () => {
   const articles = await (
-    await fetch("http://localhost:3000/api/postObjList")
+    await fetch("https://www.nutshell.news/api/postObjList")
   ).json();
   const paths = articles.map((article) => ({
     params: { id: article.PostName },
