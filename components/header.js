@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/Components.module.scss";
 import Image from "next/image";
-import MobileMenuExtension from "./mobile-menu-extension";
+
 import React, { useState } from "react";
 
 export default function HeaderMenu() {
@@ -84,7 +84,10 @@ export default function HeaderMenu() {
             </div>
           </div>
 
-          <div className={styles["extension-mobile"]}>
+          <div
+            className={styles["extension-mobile"]}
+            onClick={() => mobileMenu()}
+          >
             <span className={styles["extension-logo-wrap"]}>
               <Image src="/acorn.svg" alt="acorn" layout="fill" />
             </span>
