@@ -1,11 +1,20 @@
 import Link from "next/link";
 import styles from "../styles/Components.module.scss";
 import Image from "next/image";
+import MobileMenuExtension from "./mobile-menu-extension";
+import React, { useState } from "react";
 
 export default function HeaderMenu() {
+  const [rotateChevron, setRotateChevron] = useState(false);
+  function mobileMenu() {
+    setRotateChevron(!rotateChevron);
+  }
   return (
     <div className={styles["headerwrap"]}>
-      <div className={styles["headerlogowrap"]}>
+      <div
+        className={styles["headerlogowrap-desktop"]}
+        onClick={() => mobileMenu()}
+      >
         <Link href="/" passHref>
           <p className={styles["headerlogo"]}>
             <Image src="/acorn.svg" alt="Nutshell News Logo" layout="fill" />
@@ -15,7 +24,19 @@ export default function HeaderMenu() {
           <h1 className={styles["headertitle"]}>nutshell news</h1>
         </Link>
       </div>
+      <div
+        className={styles["headerlogowrap-mobile"]}
+        onClick={() => mobileMenu()}
+      >
+        <p className={styles["headerlogo"]}>
+          <Image src="/acorn.svg" alt="Nutshell News Logo" layout="fill" />
+        </p>
 
+        <h1 className={styles["headertitle"]}>nutshell news</h1>
+      </div>
+      <div className={styles[`subheader-list${rotateChevron ? "-open" : ""}`]}>
+        <MobileMenuExtension />
+      </div>
       <ul className={styles["headerbuttonslist"]}>
         <li className={styles["headerbuttons"]}>
           <Link href="/">News</Link>
