@@ -2,6 +2,7 @@ import { getSession } from "next-auth/react";
 import styles from "../styles/Pages.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { signOut } from "next-auth/react";
 
 function ReadingList(props) {
   return (
@@ -12,7 +13,15 @@ function ReadingList(props) {
           <Link href="/profile">
             <div>Change Password</div>
           </Link>
-          <div>Sign-Out</div>
+          <button
+            onClick={() =>
+              signOut({
+                callbackUrl: `/`,
+              })
+            }
+          >
+            Sign out
+          </button>
         </div>
         <div className={styles["readinglist-main-card"]}>
           <div className={styles["font-title-header"]}>Reading List</div>

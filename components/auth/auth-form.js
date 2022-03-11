@@ -49,7 +49,7 @@ function AuthForm() {
 
       if (!result.error) {
         // set some auth state
-        router.replace("/profile");
+        router.replace("/readinglist");
       }
     } else {
       try {

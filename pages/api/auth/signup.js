@@ -24,10 +24,9 @@ async function handler(req, res) {
   }
 
   const client = await connectToDatabase();
-
   const db = client.db("Nutshell");
-
   const existingUser = await db.collection("users").findOne({ email: email });
+
   if (existingUser) {
     res.status(422).json({ message: "User exists already!" });
     client.close();
@@ -39,6 +38,12 @@ async function handler(req, res) {
   const result = await db.collection("users").insertOne({
     email: email,
     password: hashedPassword,
+  });
+
+  const result2 = await db.collection("userProfiles").insertOne({
+    email: email,
+    trackedPosts: [],
+    rlObjArray: [],
   });
 
   res.status(201).json({ message: "Created us !" });
