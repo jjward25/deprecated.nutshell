@@ -258,3 +258,71 @@
 .about-text {
   padding: 15px 0px 5px 0px;
 }
+
+/**** READING LIST ********/
+.readinglist-wrap {
+  background-color: #f4f7f9;
+  min-height: 100vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  @include for-desktop-up {
+    min-height: calc(100vh - 148px);
+    height: 100%;
+    flex-direction: row;
+  }
+}
+.readinglist-left {
+  display: none;
+  @include for-desktop-up {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 0 2.5vw;
+    max-width: 420px;
+  }
+}
+.readinglist-main-card {
+  width: 100vw;
+  border-radius: 4px;
+  padding: 15px 0 0 0;
+
+  @include for-desktop-up {
+    width: 850px;
+    margin: 0px 40px 0px 450px;
+    padding: 20px 30px;
+  }
+}
+.readinglist-post-card {
+  background-color: white;
+  padding: 10px 30px 5px 30px;
+  margin-top: 25px;
+}
+.rl-card-titlebar {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding: 5px 0px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  margin-bottom: 25px;
+}
+.rl-card-posttitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.rl-card-buttons {
+  display: flex;
+}
+.post-card-bookmark {
+  margin: auto 0 auto 18px;
+  position: relative;
+  width: 20px;
+  height: 25px;
+}
+.rl-icon {
+  height: 25px;
+  width: 25px;
+  margin: auto 0 auto 18px;
+  display: block;
+  position: relative;
+}

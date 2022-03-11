@@ -1,5 +1,5 @@
 import ProfileForm from "./profile-form";
-import classes from "./user-profile.module.css";
+import classes from "./user-profile.module.scss";
 
 function UserProfile() {
   // const [isLoading, setIsLoading] = useState(true);

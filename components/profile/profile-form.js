@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import classes from "./profile-form.module.css";
+import classes from "./profile-form.module.scss";
 
 function ProfileForm(props) {
   const oldPasswordRef = useRef();
