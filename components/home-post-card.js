@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 const ROUTE_POST_ID = "/[id]";
-
 export default function HomePostCard(props) {
   const [rotateChevron, setRotateChevron] = useState(false);
   function shExtend() {
@@ -43,7 +42,7 @@ export default function HomePostCard(props) {
           return (
             <HomePostCardExtension
               subheader={subheader.SubheaderName}
-              key={`${props.postName}+" "+${subheader}`}
+              key={`${props.postName}+" "+${subheader.SubheaderName}`}
             />
           );
         })}

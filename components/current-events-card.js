@@ -3,23 +3,24 @@ import Link from "next/link";
 const ROUTE_POST_ID = "/[id]";
 
 export default function CurrentEvents(props) {
+  console.log(props.ceBullets);
   return (
     <div className={styles["current-events"]}>
       <div className={styles["font-category-header"]}>Current Events </div>
 
       <div className={styles["ce-card-wrap"]}>
-        {props.ceBullets.map((post) => {
+        {props.ceBullets.map((bullet) => {
           return (
             <div
               className={styles["current-events-card"]}
               key={
-                post.Category +
+                bullet.Category +
                 "." +
-                post.PostPriority +
+                bullet.PostPriority +
                 "." +
-                post.SubheaderPriority +
+                bullet.SubheaderPriority +
                 "." +
-                post.BulletPriority
+                bullet.BulletPriority
               }
             >
               <div className={styles["ce-card-header"]}>
@@ -28,12 +29,12 @@ export default function CurrentEvents(props) {
                     <Link
                       href={{
                         pathname: ROUTE_POST_ID,
-                        query: { id: post.PostName },
+                        query: { id: bullet.PostName },
                       }}
-                      as={post.PostName}
+                      as={bullet.PostName}
                       passHref
                     >
-                      {post.SubheaderName}
+                      {bullet.SubheaderName}
                     </Link>
                   </div>
                 </div>
@@ -41,21 +42,21 @@ export default function CurrentEvents(props) {
                   <Link
                     href={{
                       pathname: ROUTE_POST_ID,
-                      query: { id: post.PostName },
+                      query: { id: bullet.PostName },
                     }}
-                    as={post.PostName}
+                    as={bullet.PostName}
                     passHref
                   >
-                    {post.PostDate}
+                    {bullet.PostDate}
                   </Link>
                 </div>
               </div>
 
-              <div className={styles["ce-card-main"]}>{post.BulletText}</div>
+              <div className={styles["ce-card-main"]}>{bullet.BulletText}</div>
 
               <div className={styles["ce-card-citation"]}>
-                <a href={post.BulletLink} target="_blank" rel="noreferrer">
-                  {post.BulletCite}
+                <a href={bullet.BulletLink} target="_blank" rel="noreferrer">
+                  {bullet.BulletCite}
                 </a>
               </div>
             </div>

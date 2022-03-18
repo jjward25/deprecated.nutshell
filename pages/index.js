@@ -22,10 +22,6 @@ export default function Home(props) {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-        <link
-          href={`https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Contrail+One&family=Fredericka+the+Great&family=Julius+Sans+One&family=Montserrat:wght@500;600;700&family=Raleway+Dots&family=Raleway:wght@500&family=Sanchez&family=Stick+No+Bills:wght@500&display=swap`}
-          rel="stylesheet"
-        />
       </Head>
 
       <main className={styles["main"]}>
