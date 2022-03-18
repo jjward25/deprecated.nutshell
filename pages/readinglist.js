@@ -1,27 +1,12 @@
-import { getSession } from "next-auth/react";
 import styles from "../styles/Pages.module.scss";
-import Link from "next/link";
 import Image from "next/image";
-import { signOut } from "next-auth/react";
 
 function ReadingList(props) {
   return (
     <div className={styles["container"]}>
       <div className={styles["readinglist-wrap"]}>
         <div className={styles["readinglist-left"]}>
-          <div>User: {props.session.user.email}</div>
-          <Link href="/profile">
-            <div>Change Password</div>
-          </Link>
-          <button
-            onClick={() =>
-              signOut({
-                callbackUrl: `/`,
-              })
-            }
-          >
-            Sign out
-          </button>
+          <div>User: Username</div>
         </div>
         <div className={styles["readinglist-main-card"]}>
           <div className={styles["font-title-header"]}>Reading List</div>
@@ -78,18 +63,8 @@ function ReadingList(props) {
 export async function getServerSideProps(context) {
   const userReadingList = [];
 
-  const session = await getSession({ req: context.req });
-  if (!session) {
-    return {
-      redirect: {
-        destination: "/auth",
-        permanent: false,
-      },
-    };
-  }
-
   return {
-    props: { session },
+    props: { userReadingList },
   };
 }
 
