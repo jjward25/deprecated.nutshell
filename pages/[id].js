@@ -7,7 +7,6 @@ import Accordion from "../components/postAccordion";
 export default function Article(props) {
   const router = useRouter();
   var post = props.postData[router.query.id];
-
   var category = "";
 
   var relatedPosts = [];
@@ -150,7 +149,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };
 

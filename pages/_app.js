@@ -1,14 +1,14 @@
 import "../styles/globals.scss";
 import Layout from "../components/layout";
-import { SessionProvider } from "next-auth/react";
 
+import { UserProvider } from "@auth0/nextjs-auth0";
 function MyApp({ Component, pageProps }) {
   return (
-    <SessionProvider session={pageProps.session}>
+    <UserProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </SessionProvider>
+    </UserProvider>
   );
 }
 
