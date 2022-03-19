@@ -12,7 +12,7 @@ function ReadingList({ user, error, isLoading }) {
           <div>User: {user.email}</div>
 
           <a
-            href={`https://dev-wo4ey-tk.us.auth0.com/v2/logout?client_id=WS7xSuJouhSrpqWwQH8Wi4tOwqjEdFdU&returnTo=https://www.nutshell.news/`}
+            href={`https://dev-wo4ey-tk.us.auth0.com/v2/logout?client_id=WS7xSuJouhSrpqWwQH8Wi4tOwqjEdFdU&returnTo=https://www.nutshell.news/?federated`}
           >
             Logout
           </a>
