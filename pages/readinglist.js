@@ -10,13 +10,11 @@ function ReadingList({ user, error, isLoading }) {
       <div className={styles["readinglist-wrap"]}>
         <div className={styles["readinglist-left"]}>
           <div>User: {user.email}</div>
-
           <a
             href={`https://dev-wo4ey-tk.us.auth0.com/v2/logout?client_id=WS7xSuJouhSrpqWwQH8Wi4tOwqjEdFdU&returnTo=https://www.nutshell.news/`}
           >
             Logout
           </a>
-          <div> User Data: {JSON.stringify(user)}</div>
         </div>
         <div className={styles["readinglist-main-card"]}>
           <div className={styles["font-title-header"]}>Reading List</div>
