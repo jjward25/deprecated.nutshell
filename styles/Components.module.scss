@@ -14,11 +14,19 @@
   margin-bottom: 15px;
   padding: 10px 0;
 }
+.post-icon-bg-tracked {
+  background-color: #7621d8;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
 .bookmark-img-wrap {
   height: 25px;
   width: 25px;
   margin: auto;
   display: block;
+  position: relative;
 }
 
 /***** CURRENT EVENTS CARD *****/
@@ -305,6 +313,7 @@
   font-size: 100%;
   font-weight: 400;
 }
+
 /***** HOME POST CARD *****/
 .full-home-card {
   margin: 10px 0;

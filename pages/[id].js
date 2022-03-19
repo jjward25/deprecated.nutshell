@@ -140,9 +140,11 @@ export default function Article(props) {
 // Set the postNames to the path parameter for dynamic routes
 
 export const getStaticPaths = async () => {
+  // Pull and jsonify a list of article-level data
   const articles = await (
     await fetch("https://www.nutshell.news/api/postObjList")
   ).json();
+
   const paths = articles.map((article) => ({
     params: { id: article.PostName },
   }));
@@ -154,10 +156,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (ctx) => {
+  //ID is taken from the rout query in home-post-card
   const articleId = ctx.params.id;
+  // Content obj is all content by section
   const contentObj = await (
     await fetch("https://www.nutshell.news/api/contentObj")
   ).json();
+  //The Post list is restructured as an object for better searchability
   const res = await fetch("https://www.nutshell.news/api/postObjList");
   const posts = await res.json();
   const postData = Object.assign(

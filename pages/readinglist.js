@@ -2,7 +2,8 @@ import styles from "../styles/Pages.module.scss";
 import Image from "next/image";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-function ReadingList({ user, error, isLoading }) {
+function ReadingList({ user, error, isLoading }, props) {
+  console.log(props.users);
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
   return (
@@ -10,6 +11,8 @@ function ReadingList({ user, error, isLoading }) {
       <div className={styles["readinglist-wrap"]}>
         <div className={styles["readinglist-left"]}>
           <div>User: {user.email}</div>
+          <div>User: {props.users}</div>
+
           <a
             href={`https://www.nutshell.news/api/auth/logout?client_id=WS7xSuJouhSrpqWwQH8Wi4tOwqjEdFdU&returnTo=https://www.nutshell.news/`}
           >
@@ -25,7 +28,7 @@ function ReadingList({ user, error, isLoading }) {
               <div className={styles["rl-card-buttons"]}>
                 <div className={styles["post-card-bookmark"]}>
                   <Image
-                    src="/bookmark-unselected.svg"
+                    src="/bookmark-false.svg"
                     alt="bookmark"
                     layout="fill"
                   />
@@ -67,5 +70,10 @@ function ReadingList({ user, error, isLoading }) {
     </div>
   );
 }
+export async function getServerSideProps() {
+  const res = await fetch("https://www.nutshell.news/api/users");
+  const users = await JSON.stringify(res);
 
+  return { props: { users } };
+}
 export default withPageAuthRequired(ReadingList);
