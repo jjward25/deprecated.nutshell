@@ -1,12 +1,22 @@
 import styles from "../styles/Pages.module.scss";
 import Image from "next/image";
+import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-function ReadingList(props) {
+function ReadingList({ user, error, isLoading }) {
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
   return (
     <div className={styles["container"]}>
       <div className={styles["readinglist-wrap"]}>
         <div className={styles["readinglist-left"]}>
-          <div>User: Username</div>
+          <div>User: {user.email}</div>
+
+          <a
+            href={`https://dev-wo4ey-tk.us.auth0.com/v2/logout?client_id=WS7xSuJouhSrpqWwQH8Wi4tOwqjEdFdU&returnTo=https://www.nutshell.news/`}
+          >
+            Logout
+          </a>
+          <div> User Data: {JSON.stringify(user)}</div>
         </div>
         <div className={styles["readinglist-main-card"]}>
           <div className={styles["font-title-header"]}>Reading List</div>
@@ -60,12 +70,4 @@ function ReadingList(props) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const userReadingList = [];
-
-  return {
-    props: { userReadingList },
-  };
-}
-
-export default ReadingList;
+export default withPageAuthRequired(ReadingList);
