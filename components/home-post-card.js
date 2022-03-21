@@ -17,7 +17,6 @@ export default function HomePostCard(props) {
       <div className={styles[`home-post-card${rotateChevron ? "-open" : ""}`]}>
         <div className={styles["post-card-bookmark"]}>
           <Image src="/bookmark-false.svg" alt="bookmark" layout="fill" />
-          <Bookmark post={props.postName} />
         </div>
 
         <Link
@@ -44,7 +43,7 @@ export default function HomePostCard(props) {
           return (
             <HomePostCardExtension
               subheader={subheader.SubheaderName}
-              key={`${props.SubheaderName}+" "+${subheader.postName}`}
+              key={`${subheader.SubheaderName}+" "+${props.postName}`}
             />
           );
         })}

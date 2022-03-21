@@ -5,7 +5,7 @@ import CurrentEvents from "../components/current-events-card";
 
 //props.cePosts
 //props.posts[0].News
-export default function Home(props) {
+function Home(props) {
   return (
     <div className={styles["container"]}>
       <Head>
@@ -54,3 +54,4 @@ export async function getStaticProps() {
     revalidate: 10, // In seconds
   };
 }
+export default Home;

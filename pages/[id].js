@@ -109,11 +109,7 @@ export default function Article(props) {
           <div className={styles["post-social-icons"]}>
             <div className={styles['post-icon-bg"']}>
               <span className={styles["post-icon-wrap"]}>
-                <Image
-                  src="/bookmark-unselected.svg"
-                  alt="bookmark"
-                  layout="fill"
-                />
+                <Image src="/bookmark-false.svg" alt="bookmark" layout="fill" />
               </span>
             </div>
             <div className={styles['post-icon-bg"']}>
