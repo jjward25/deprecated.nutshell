@@ -3,7 +3,6 @@ import Image from "next/image";
 import HomePostCardExtension from "./home-post-card-extension";
 import React, { useState } from "react";
 import Link from "next/link";
-import Bookmark from "../components/bookmark";
 
 const ROUTE_POST_ID = "/[id]";
 export default function HomePostCard(props) {
@@ -11,6 +10,9 @@ export default function HomePostCard(props) {
   function shExtend() {
     setRotateChevron(!rotateChevron);
   }
+
+  //const [userRL, setUserRL] = useState([]);
+  //function postTracking() {}
 
   return (
     <div className={styles[`full-home-card${rotateChevron ? "-open" : ""}`]}>

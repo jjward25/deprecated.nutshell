@@ -5,8 +5,6 @@ import Accordion from "../components/postAccordion";
 import { connectToDatabase } from "../util/mongodb";
 
 export default function Article(props) {
-  console.log(props.content);
-
   // Get the relevant post details
   var post = props.postList.filter(
     (post) => post.PostName == props.articleId
