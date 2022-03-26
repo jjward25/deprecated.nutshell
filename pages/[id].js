@@ -1,34 +1,25 @@
 import HomePostCard from "../components/home-post-card";
 import Image from "next/image";
 import styles from "../styles/Pages.module.scss";
-import { useRouter } from "next/router";
 import Accordion from "../components/postAccordion";
+import { connectToDatabase } from "../util/mongodb";
 
 export default function Article(props) {
-  // Define the desired post using the router to receive the post [id]
-  const router = useRouter();
-  var post = props.postData[router.query.id];
-  var category = "";
+  console.log(props.content);
 
-  // Find related posts
-  var relatedPosts = [];
-  if (typeof post == "undefined") {
-    relatedPosts = props.contentObj[0]["News"].filter(
-      (category) => category.CategoryName == post.Category
-    )[0].PostArray;
-  } else {
-    relatedPosts = props.contentObj[0][post.Section].filter(
-      (category) => category.CategoryName == post.Category
-    )[0].PostArray;
-  }
+  // Get the relevant post details
+  var post = props.postList.filter(
+    (post) => post.PostName == props.articleId
+  )[0];
 
-  // IF postdata[routerID] is undefined, log the router data and the postdata object, else pull out the "Intro" content
+  // IF post is undefined, log the router data and the post object, else pull out the "Intro" content
   var intro = [];
-  if (typeof props.postData[router.query.id] == "undefined") {
+  if (typeof post == "undefined") {
     console.log("router: " + str(router.query.id));
-    console.log("postObjDict: " + str(props.postData));
+    console.log("postObjDict: " + str(props.postList));
+    console.log("articleID: " + str(props.articleId));
   } else {
-    intro = props.postData[router.query.id].SubheaderArray.filter(
+    intro = post.SubheaderArray.filter(
       (postObj) => postObj.SubheaderName == "Introduction"
     );
   }
@@ -38,6 +29,18 @@ export default function Article(props) {
     introText = "";
   } else {
     introText = intro[0].BulletArray[0].BulletText;
+  }
+  // Find related posts
+  var category = "";
+  var relatedPosts = [];
+  if (typeof post == "undefined") {
+    relatedPosts = props.postList.filter(
+      (postItem) => postItem.Category == "Current Events"
+    );
+  } else {
+    relatedPosts = props.postList.filter(
+      (postItem) => postItem.Category == post.Category
+    );
   }
 
   return (
@@ -140,9 +143,14 @@ export default function Article(props) {
 
 export const getStaticPaths = async () => {
   // Pull and jsonify a list of article-level data
-  const articles = await (
-    await fetch("https://www.nutshell.news/api/postObjList")
-  ).json();
+  const { db } = await connectToDatabase();
+  const req = await db
+    .collection("PostObjList")
+    .find({})
+    .sort()
+    .limit(1000)
+    .toArray();
+  const articles = await JSON.parse(JSON.stringify(req));
 
   const paths = articles.map((article) => ({
     params: { id: article.PostName },
@@ -155,25 +163,21 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (ctx) => {
-  //ID is taken from the rout query in home-post-card
+  //ID is taken from the route query in home-post-card
   const articleId = ctx.params.id;
-  // Content obj is all content by section
-  const contentObj = await (
-    await fetch("https://www.nutshell.news/api/contentObj")
-  ).json();
-  //The Post list is restructured as an object for better searchability
-  const res = await fetch("https://www.nutshell.news/api/postObjList");
-  const posts = await res.json();
-  const postData = Object.assign(
-    {},
-    ...posts.map((val) => ({
-      [val.PostName]: val,
-    }))
-  );
+
+  const { db } = await connectToDatabase();
+  const req = await db
+    .collection("PostObjList")
+    .find({})
+    .sort()
+    .limit(1000)
+    .toArray();
+  const postList = await JSON.parse(JSON.stringify(req));
 
   // fetch the data using the article id and return as props
   return {
-    props: { articleId, postData, contentObj },
+    props: { articleId, postList },
     revalidate: 10,
   };
 };

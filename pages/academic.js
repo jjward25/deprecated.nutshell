@@ -1,12 +1,13 @@
 import HomeVerticals from "../components/home-vertical-content";
 import styles from "../styles/Pages.module.scss";
-import Content from "../content.json";
+import { connectToDatabase } from "../util/mongodb";
+
 export default function Academic(props) {
   return (
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={props.posts[0].Academic} />
+          <HomeVerticals section={props.academicContent[0].Categories} />
         </div>
       </main>
     </div>
@@ -14,12 +15,18 @@ export default function Academic(props) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://www.nutshell.news/api/contentObj");
-  const posts = await res.json();
+  const { db } = await connectToDatabase();
+  const req = await db
+    .collection("ContentMap")
+    .find({ Section: "Academic" })
+    .sort()
+    .limit(1000)
+    .toArray();
+  const academicContent = await JSON.parse(JSON.stringify(req));
 
   return {
     props: {
-      posts,
+      academicContent,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in

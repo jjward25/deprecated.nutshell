@@ -75,9 +75,13 @@ for sectionObj in contentArray:
                     continue
             else:
                 continue
-
+        ## Remove Dupes
         postList = [i for n, i in enumerate(postDupes) if i not in postList[n + 1:]]  
-        postList = sorted(postList, key=itemgetter('PostPriority')) 
+        ## If the Category is Current Events, sort by descending PostDate instead of PostPriority
+        if  categoryObj['CategoryName'] == "Current Events":
+            postList = sorted(postList, key=itemgetter('PostDate'),reverse=True) 
+        else:
+            postList = sorted(postList, key=itemgetter('PostPriority')) 
         categoryObj.setdefault("PostArray",postList)
 
 #print(contentArray)
@@ -152,6 +156,6 @@ for sectionObj in contentArray:
 
 ##contentArray = []
 ##pp.pprint(contentArray)
-with open("contentTwo.json", "w") as write_file:
+with open("contentMap.json", "w") as write_file:
     json.dump(contentArray, write_file, indent=4)
     

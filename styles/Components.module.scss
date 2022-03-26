@@ -53,6 +53,11 @@
     display: none;
   }
 }
+.ce-map {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
 .current-events-card {
   display: flex;
   flex-direction: column;

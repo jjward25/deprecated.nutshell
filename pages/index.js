@@ -7,9 +7,6 @@ import { connectToDatabase } from "../util/mongodb";
 //props.cePosts
 //props.posts[0].News
 function Home(props) {
-  console.log(props.contentMap);
-  console.log(props.posts);
-  console.log(props.ceContent);
   return (
     <div className={styles["container"]}>
       <Head>
@@ -30,11 +27,11 @@ function Home(props) {
 
       <main className={styles["main"]}>
         <div className={styles["home-top"]}>
-          <CurrentEvents ceBullets={props.cePosts} />
+          <CurrentEvents ceContent={props.ceContent} />
         </div>
 
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals section={props.posts[0].News} />
+          <HomeVerticals section={props.newsContent[0].Categories} />
         </div>
       </main>
     </div>
@@ -42,32 +39,22 @@ function Home(props) {
 }
 export async function getStaticProps() {
   const { db } = await connectToDatabase();
-  const newsContent = await db
-    .collection("contentMap")
-    .find({ section: "News" })
+  const req = await db
+    .collection("ContentMap")
+    .find({ Section: "News" })
     .sort()
     .limit(1000)
     .toArray();
+  const newsContent = await JSON.parse(JSON.stringify(req));
 
-  const res3 = await fetch("https://www.nutshell.news/api/contentMap");
-  const contentMap = await res3.json();
-
-  const res = await fetch("https://www.nutshell.news/api/contentObj");
-  const posts = await res.json();
-
-  const res2 = await fetch("https://www.nutshell.news/api/cePosts");
-  const cePosts = await res2.json();
+  const ceContent = newsContent[0].Categories[0].PostArray;
 
   return {
     props: {
-      posts,
-      cePosts,
-      contentMap,
+      ceContent,
       newsContent,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
+
     revalidate: 10, // In seconds
   };
 }

@@ -8,56 +8,74 @@ export default function CurrentEvents(props) {
       <div className={styles["font-category-header"]}>Current Events </div>
 
       <div className={styles["ce-card-wrap"]}>
-        {props.ceBullets.map((bullet) => {
+        {props.ceContent.map((post) => {
           return (
-            <div
-              className={styles["current-events-card"]}
-              key={
-                bullet.Category +
-                "." +
-                bullet.PostPriority +
-                "." +
-                bullet.SubheaderPriority +
-                "." +
-                bullet.BulletPriority
-              }
-            >
-              <div className={styles["ce-card-header"]}>
-                <div className={styles["ce-card-subheader"]}>
-                  <div className={styles["subheader-text"]}>
-                    <Link
-                      href={{
-                        pathname: ROUTE_POST_ID,
-                        query: { id: bullet.PostName },
-                      }}
-                      as={bullet.PostName}
-                      passHref
-                    >
-                      {bullet.SubheaderName}
-                    </Link>
+            <div className={styles["ce-map"]}>
+              {post.SubheaderArray.map((subheader) => {
+                return (
+                  <div className={styles["ce-map"]}>
+                    {subheader.BulletArray.map((bullet) => {
+                      return (
+                        <div
+                          className={styles["current-events-card"]}
+                          key={
+                            post.postDate +
+                            "." +
+                            post.PostPriority +
+                            "." +
+                            subheader.SubheaderPriority +
+                            "." +
+                            bullet.BulletPriority
+                          }
+                        >
+                          <div className={styles["ce-card-header"]}>
+                            <div className={styles["ce-card-subheader"]}>
+                              <div className={styles["subheader-text"]}>
+                                <Link
+                                  href={{
+                                    pathname: ROUTE_POST_ID,
+                                    query: { id: post.PostName },
+                                  }}
+                                  as={post.PostName}
+                                  passHref
+                                >
+                                  {subheader.SubheaderName}
+                                </Link>
+                              </div>
+                            </div>
+                            <div className={styles["ce-card-postdate"]}>
+                              <Link
+                                href={{
+                                  pathname: ROUTE_POST_ID,
+                                  query: { id: post.PostName },
+                                }}
+                                as={post.PostName}
+                                passHref
+                              >
+                                {post.PostDate}
+                              </Link>
+                            </div>
+                          </div>
+
+                          <div className={styles["ce-card-main"]}>
+                            {bullet.BulletText}
+                          </div>
+
+                          <div className={styles["ce-card-citation"]}>
+                            <a
+                              href={bullet.BulletLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {bullet.BulletCite}
+                            </a>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                </div>
-                <div className={styles["ce-card-postdate"]}>
-                  <Link
-                    href={{
-                      pathname: ROUTE_POST_ID,
-                      query: { id: bullet.PostName },
-                    }}
-                    as={bullet.PostName}
-                    passHref
-                  >
-                    {bullet.PostDate}
-                  </Link>
-                </div>
-              </div>
-
-              <div className={styles["ce-card-main"]}>{bullet.BulletText}</div>
-
-              <div className={styles["ce-card-citation"]}>
-                <a href={bullet.BulletLink} target="_blank" rel="noreferrer">
-                  {bullet.BulletCite}
-                </a>
-              </div>
+                );
+              })}
             </div>
           );
         })}
