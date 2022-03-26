@@ -2,12 +2,14 @@ import Head from "next/head";
 import styles from "../styles/Pages.module.scss";
 import HomeVerticals from "../components/home-vertical-content";
 import CurrentEvents from "../components/current-events-card";
+import { connectToDatabase } from "../util/mongodb";
 
 //props.cePosts
 //props.posts[0].News
 function Home(props) {
-  //console.log(props.contentMap);
+  console.log(props.contentMap);
   console.log(props.posts);
+  console.log(props.ceContent);
   return (
     <div className={styles["container"]}>
       <Head>
@@ -39,20 +41,29 @@ function Home(props) {
   );
 }
 export async function getStaticProps() {
+  const { db } = await connectToDatabase();
+  const newsContent = await db
+    .collection("contentMap")
+    .find({ section: "News" })
+    .sort()
+    .limit(1000)
+    .toArray();
+
+  const res3 = await fetch("https://www.nutshell.news/api/contentMap");
+  const contentMap = await res3.json();
+
   const res = await fetch("https://www.nutshell.news/api/contentObj");
   const posts = await res.json();
 
   const res2 = await fetch("https://www.nutshell.news/api/cePosts");
   const cePosts = await res2.json();
 
-  //const res3 = await fetch("https://www.nutshell.news/api/contentMap");
-  //const contentMap = await res3.json();
-
   return {
     props: {
       posts,
       cePosts,
-      //contentMap,
+      contentMap,
+      newsContent,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
