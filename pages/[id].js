@@ -5,10 +5,12 @@ import { useRouter } from "next/router";
 import Accordion from "../components/postAccordion";
 
 export default function Article(props) {
+  // Define the desired post using the router to receive the post [id]
   const router = useRouter();
   var post = props.postData[router.query.id];
   var category = "";
 
+  // Find related posts
   var relatedPosts = [];
   if (typeof post == "undefined") {
     relatedPosts = props.contentObj[0]["News"].filter(
@@ -20,6 +22,7 @@ export default function Article(props) {
     )[0].PostArray;
   }
 
+  // IF postdata[routerID] is undefined, log the router data and the postdata object, else pull out the "Intro" content
   var intro = [];
   if (typeof props.postData[router.query.id] == "undefined") {
     console.log("router: " + str(router.query.id));
@@ -29,7 +32,7 @@ export default function Article(props) {
       (postObj) => postObj.SubheaderName == "Introduction"
     );
   }
-
+  // Define the intro text using the "Intro" subheader content defined above
   var introText = "";
   if (typeof intro[0] == "undefined") {
     introText = "";
