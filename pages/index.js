@@ -6,7 +6,7 @@ import CurrentEvents from "../components/current-events-card";
 //props.cePosts
 //props.posts[0].News
 function Home(props) {
-  console.log(props.contentMap);
+  //console.log(props.contentMap);
   console.log(props.posts);
   return (
     <div className={styles["container"]}>
@@ -45,14 +45,14 @@ export async function getStaticProps() {
   const res2 = await fetch("https://www.nutshell.news/api/cePosts");
   const cePosts = await res2.json();
 
-  const res3 = await fetch("https://www.nutshell.news/api/contentMap");
-  const contentMap = await res3.json();
+  //const res3 = await fetch("https://www.nutshell.news/api/contentMap");
+  //const contentMap = await res3.json();
 
   return {
     props: {
       posts,
       cePosts,
-      contentMap,
+      //contentMap,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
