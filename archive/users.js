@@ -1,4 +1,5 @@
-import clientPromise from "../../lib/mongodb";
+import mongoose from "mongoose";
+import clientPromise from "../lib/mongodb";
 export default async (req, res) => {
   const client = await clientPromise;
   const database = client.db("Nutshell");
