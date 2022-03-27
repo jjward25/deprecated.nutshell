@@ -18,7 +18,7 @@ export default function HomePostCard(props) {
     <div className={styles[`full-home-card${rotateChevron ? "-open" : ""}`]}>
       <div className={styles[`home-post-card${rotateChevron ? "-open" : ""}`]}>
         <div className={styles["post-card-bookmark"]}>
-          <Image src="/bookmark-false.svg" alt="bookmark" layout="fill" />
+          <Image src="/acorn.png" alt="acron" layout="fill" />
         </div>
 
         <Link

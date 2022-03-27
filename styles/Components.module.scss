@@ -33,9 +33,9 @@
 /***** CURRENT EVENTS CARD *****/
 /***** CURRENT EVENTS CARD *****/
 .current-events {
-  margin: 0vh 0 10px 5vw;
+  margin: 0vh 0 10px 20px;
   width: 100vw;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 0 25px 0 25px;
   }
   .ce-card-wrap {
@@ -43,7 +43,7 @@
     margin: 0;
     overflow-x: scroll;
 
-    @include for-desktop-up {
+    @include for-tablet-landscape-up {
       padding-top: 10px;
       width: calc(100vw - 75px);
       display: flex;
@@ -62,11 +62,11 @@
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: 80vw;
+  width: 300px;
   margin-right: 5vw;
   background-color: #ffffff;
   border-radius: 4px;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 0px 0 0 25px;
     width: 530px;
     height: 22.5vh;
@@ -85,7 +85,7 @@
   width: 45vw;
   border-radius: 4px;
   margin: auto 0;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     height: 25px;
     width: 145px;
     margin: 15px 0 0 15px;
@@ -99,7 +99,7 @@
 .ce-card-postdate {
   margin: auto 3vw;
 
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 15px 15px 0 0;
   }
 }
@@ -108,7 +108,7 @@
   margin: 1.5vh 3vw 0 3vw;
   height: 225px;
   overflow: scroll;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 15px 15px 0 15px;
     height: 100px;
   }
@@ -118,7 +118,7 @@
   color: #7621d8;
   margin: 0vh 0 0 3vw;
   height: 14px;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 15px 0 0 15px;
   }
 }
@@ -137,7 +137,7 @@
   justify-content: space-around;
   position: fixed;
   z-index: 10;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -152,7 +152,7 @@
   border-radius: 4px;
   margin: auto 0;
   border-radius: 0px;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: none;
 
     width: 350px;
@@ -174,7 +174,7 @@
 }
 .headerlogowrap-desktop {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     height: auto;
     align-content: center;
@@ -190,7 +190,7 @@
   align-content: center;
   justify-content: center;
   margin: auto;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: none;
   }
 }
@@ -209,7 +209,7 @@
 }
 .headerbuttonslist {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     list-style: none;
     width: 45vw;
@@ -224,7 +224,7 @@
 }
 .headersearchwrap {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     height: 35px;
     width: 250px;
@@ -238,13 +238,13 @@
 .search-icon-wrap {
   position: relative;
   width: 20px;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin-left: 5px;
   }
 }
 .headersearchtext {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     margin: auto;
     margin-left: 0;
@@ -255,7 +255,7 @@
 }
 .headerlogin {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     height: 35px;
     width: 90px;
     border-radius: 8px;
@@ -273,7 +273,7 @@
 /***** FOOTER *****/
 .footerwrap {
   display: none;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     height: 80px;
     width: 100%;
     max-width: 100vw;
@@ -331,7 +331,7 @@
   font-size: 30px;
   color: #1ac182;
   font-family: "Sanchez", serif;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     text-align: left;
   }
 }
@@ -339,12 +339,12 @@
   background-color: #ffffff;
   display: flex;
   margin: 10px 0;
-  width: 80vw;
-  height: 5.5vh;
+  width: 300px;
+  height: 40px;
   border-radius: 10px;
   overflow: hidden;
 
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
     height: 60px;
@@ -359,10 +359,10 @@
   overflow: hidden;
   display: flex;
 
-  width: 80vw;
-  height: 5.5vh;
+  width: 300px;
+  height: 60px;
 
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
     height: 60px;
@@ -372,10 +372,15 @@
   }
 }
 .post-card-bookmark {
-  margin: auto 18px;
+  margin: auto 10px;
   position: relative;
-  width: 20px;
+  width: 40px;
   height: 30px;
+  @include for-tablet-landscape-up {
+    margin: auto 15px;
+    width: 45px;
+    height: 35px;
+  }
 }
 .post-title {
   font-size: 20px;
@@ -418,13 +423,13 @@
 .home-post-card-extension {
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  height: 5vh;
+  width: 300px;
+  height: 60px;
   background-color: #ffffff;
   border-radius: 4px;
   margin: auto 0;
   border-radius: 0px;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
     border-radius: 0px;
@@ -435,13 +440,16 @@
   margin: auto 0;
 }
 .extension-subheader-text {
-  margin: auto 0 auto 15px;
+  margin: auto 0;
 }
 .extension-logo-wrap {
-  height: 20px;
-  width: 20px;
-  margin: 5px 0 5px 15px;
+  height: 25px;
+  width: 25px;
+  margin: 5px 11px;
   position: relative;
+  @include for-tablet-landscape-up {
+    margin: 5px 15px 5px 18px;
+  }
 }
 
 /***** VERTICAL CONTENT *****/
@@ -449,10 +457,10 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  margin-bottom: 7.5vh;
-  @include for-desktop-up {
+  margin-bottom: 80px;
+  @include for-tablet-landscape-up {
     flex-direction: row;
-    margin: 2vh 0 0 25px;
+    margin: 25px 0 0 25px;
   }
 }
 
@@ -461,7 +469,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  @include for-desktop-up {
+  @include for-tablet-landscape-up {
     margin: 0;
     padding: 0;
   }
