@@ -5,8 +5,14 @@ export default function Search(props) {
   return (
     <div className={styles["container"]}>
       <main className={styles["main"]}>
-        <div className={styles["search-content-wrap"]}>
-          {category.PostArray.map((post) => {
+        <div className={styles["search-content-wrap"]}></div>
+      </main>
+    </div>
+  );
+}
+
+/*
+{category.PostArray.map((post) => {
             return (
               <HomePostCard
                 key={post.PostName}
@@ -16,8 +22,4 @@ export default function Search(props) {
               />
             );
           })}
-        </div>
-      </main>
-    </div>
-  );
-}
+          */
