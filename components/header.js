@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/Components.module.scss";
+import styles from "../styles/HeaderFooter.module.scss";
 import Image from "next/image";
 
 import React, { useState } from "react";
@@ -76,7 +76,7 @@ export default function HeaderMenu() {
             className={styles["extension-mobile"]}
             onClick={() => mobileMenu()}
           >
-            <span className={styles["extension-logo-wrap"]}>
+            <span className={styles["extension-mobile-wrap"]}>
               <Image src="/acorn.svg" alt="acorn" layout="fill" />
             </span>
             <div className={styles["extension-mobile-text"]}>
@@ -88,7 +88,7 @@ export default function HeaderMenu() {
             className={styles["extension-mobile"]}
             onClick={() => mobileMenu()}
           >
-            <span className={styles["extension-logo-wrap"]}>
+            <span className={styles["extension-mobile-wrap"]}>
               <Image src="/acorn.svg" alt="acorn" layout="fill" />
             </span>
             <div className={styles["extension-mobile-text"]}>
@@ -106,9 +106,6 @@ export default function HeaderMenu() {
         </li>
         <li className={styles["headerbuttons"]}>
           <Link href="/academic">Academic</Link>
-        </li>
-        <li className={styles["headerbuttons"]}>
-          <Link href="/readinglist">Readling List</Link>
         </li>
         <li className={styles["headerbuttons"]}>
           <Link href="/about">About</Link>

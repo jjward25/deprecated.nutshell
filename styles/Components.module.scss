@@ -1,324 +1,35 @@
 @import "mixins";
-
-.layout-container {
-  height: 100%;
-  min-height: 100vh;
-  min-width: 100vw;
-  overflow-x: hidden;
-}
-/***** BOOKMARK.JS *****/
-.post-icon-bg {
-  background-color: #ffffff;
-  height: 45px;
-  width: 45px;
-  margin-bottom: 15px;
-  padding: 10px 0;
-}
-.post-icon-bg-tracked {
-  background-color: #7621d8;
-  height: 45px;
-  width: 45px;
-  margin-bottom: 15px;
-  padding: 10px 0;
-}
-.bookmark-img-wrap {
-  height: 25px;
-  width: 25px;
-  margin: auto;
-  display: block;
-  position: relative;
-}
-
-/***** CURRENT EVENTS CARD *****/
-/***** CURRENT EVENTS CARD *****/
-/***** CURRENT EVENTS CARD *****/
-.current-events {
-  margin: 0vh 0 10px 20px;
+/***** VERTICAL CONTENT *****/
+/***** VERTICAL CONTENT *****/
+/***** VERTICAL CONTENT *****/
+.category-home-vertical-wrap {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
+  margin-bottom: 80px;
   @include for-tablet-landscape-up {
-    margin: 0 25px 0 25px;
-  }
-  .ce-card-wrap {
-    display: flex;
-    margin: 0;
-    overflow-x: scroll;
-
-    @include for-tablet-landscape-up {
-      padding-top: 10px;
-      width: calc(100vw - 75px);
-      display: flex;
-    }
-  }
-  & ::-webkit-scrollbar {
-    display: none;
-  }
-}
-.ce-map {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-.current-events-card {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 300px;
-  margin-right: 5vw;
-  background-color: #ffffff;
-  border-radius: 4px;
-  @include for-tablet-landscape-up {
-    margin: 0px 0 0 25px;
-    width: 530px;
-    height: 22.5vh;
-    min-width: 530px;
-  }
-}
-.ce-card-header {
-  display: flex;
-  justify-content: space-between;
-}
-.ce-card-subheader {
-  color: #1ac182;
-  background-color: #dbf2e9;
-  height: 30px;
-
-  width: 45vw;
-  border-radius: 4px;
-  margin: auto 0;
-  @include for-tablet-landscape-up {
-    height: 25px;
-    width: 145px;
-    margin: 15px 0 0 15px;
-  }
-}
-.subheader-text {
-  font-family: "Montserrat", SemiBold;
-  text-align: center;
-  margin: 4px auto;
-}
-.ce-card-postdate {
-  margin: auto 3vw;
-
-  @include for-tablet-landscape-up {
-    margin: 15px 15px 0 0;
-  }
-}
-.ce-card-main {
-  font-size: 16px;
-  margin: 1.5vh 3vw 0 3vw;
-  height: 225px;
-  overflow: scroll;
-  @include for-tablet-landscape-up {
-    margin: 15px 15px 0 15px;
-    height: 100px;
-  }
-}
-.ce-card-citation {
-  font-size: 12px;
-  color: #7621d8;
-  margin: 0vh 0 0 3vw;
-  height: 14px;
-  @include for-tablet-landscape-up {
-    margin: 15px 0 0 15px;
-  }
-}
-
-/***** HEADER *****/
-/***** HEADER *****/
-/***** HEADER *****/
-.headerwrap {
-  min-height: 60px;
-  width: 100%;
-  max-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #eaeaea;
-  background-color: #ffffff;
-  justify-content: space-around;
-  position: fixed;
-  z-index: 10;
-  @include for-tablet-landscape-up {
-    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    margin: 25px 0 0 25px;
   }
 }
-.mobile-menu-extension {
+
+.category-home-vertical {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  min-height: 5vh;
-  background-color: #ffffff;
-  border-radius: 4px;
-  margin: auto 0;
-  border-radius: 0px;
-  @include for-tablet-landscape-up {
-    display: none;
-
-    width: 350px;
-    border-radius: 0px;
-  }
-}
-.extension-mobile-text {
-  margin: auto 0 auto 15px;
-}
-.extension-mobile-wrap {
-  height: 20px;
-  width: 20px;
-  margin: 5px 0 5px 15px;
-  position: relative;
-}
-.extension-mobile {
-  display: flex;
-  margin: auto 0 10px 0;
-}
-.headerlogowrap-desktop {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: flex;
-    height: auto;
-    align-content: center;
-    justify-content: center;
-
-    padding-left: 15px;
-    margin: 0;
-  }
-}
-.headerlogowrap-mobile {
-  display: flex;
-  height: auto;
-  align-content: center;
-  justify-content: center;
-  margin: auto;
-  @include for-tablet-landscape-up {
-    display: none;
-  }
-}
-.headerlogo {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
-.headertitle {
-  font-size: 200%;
-  width: auto;
-  font-weight: bold;
-  margin: auto;
-  font-family: "Raleway", sans-serif;
-}
-.headerbuttonslist {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: flex;
-    list-style: none;
-    width: 45vw;
-    justify-content: space-between;
-    padding: 0px;
-    flex-wrap: wrap;
-  }
-}
-.headerbuttons {
-  font-size: 125%;
-  font-weight: 400;
-}
-.headersearchwrap {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: flex;
-    height: 35px;
-    width: 250px;
-    background-color: #e8efee;
-    font-weight: 600;
-    display: flex;
-    border-radius: 8px;
-    margin-right: 25px;
-  }
-}
-.search-icon-wrap {
-  position: relative;
-  width: 20px;
-  @include for-tablet-landscape-up {
-    margin-left: 5px;
-  }
-}
-.headersearchtext {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: flex;
-    margin: auto;
-    margin-left: 0;
-    padding-left: 2%;
-    text-align: left;
-    color: #bcc1cb;
-  }
-}
-.headerlogin {
-  display: none;
-  @include for-tablet-landscape-up {
-    height: 35px;
-    width: 90px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 125%;
-    font-weight: 400;
-    background-color: #1ac182;
-    color: white;
-    margin-right: 15px;
-  }
-}
-
-/***** FOOTER *****/
-/***** FOOTER *****/
-/***** FOOTER *****/
-.footerwrap {
-  display: none;
-  @include for-tablet-landscape-up {
-    height: 80px;
-    width: 100%;
-    max-width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #eaeaea;
-    background-color: #ffffff;
-    color: #7a8398;
-  }
-}
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.footerlogowrap {
-  padding-left: 20px;
-  display: flex;
-  height: auto;
-  align-content: center;
-  justify-content: center;
-}
-
-.footer-logo {
-  height: 35px;
-  width: 35px;
-  padding-right: 15px;
   margin: 0 auto;
-  position: relative;
-}
-.footerbuttonslist {
-  display: flex;
-  list-style: none;
-  width: 460px;
-  justify-content: space-around;
-  padding: 0px;
-  flex-wrap: wrap;
-  margin: 0;
-}
-.footerbuttons {
-  font-size: 100%;
-  font-weight: 400;
+  @include for-tablet-landscape-up {
+    margin: 0;
+    padding: 0;
+  }
 }
 
+.home-posts-wrap {
+  margin: 0 25px;
+}
+
+/***** HOME POST CARD *****/
+/***** HOME POST CARD *****/
 /***** HOME POST CARD *****/
 .full-home-card {
   margin: 10px 0;
@@ -329,7 +40,7 @@
 .font-category-header {
   padding: 10px 0 10px 0px;
   font-size: 30px;
-  color: #1ac182;
+  color: $nutshell_green;
   font-family: "Sanchez", serif;
   @include for-tablet-landscape-up {
     text-align: left;
@@ -408,7 +119,32 @@
   width: 15px;
   transform: rotate(90deg);
 }
-
+/***** BOOKMARK.JS *****/
+/***** BOOKMARK.JS *****/
+/***** BOOKMARK.JS *****/
+.post-icon-bg {
+  background-color: #ffffff;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.post-icon-bg-tracked {
+  background-color: $nutshell_purple;
+  height: 45px;
+  width: 45px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.bookmark-img-wrap {
+  height: 25px;
+  width: 25px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+/***** HOME POST CARD EXTENSION *****/
+/***** HOME POST CARD EXTENSION *****/
 /***** HOME POST CARD EXTENSION *****/
 .subheader-list {
   height: 0;
@@ -450,31 +186,4 @@
   @include for-tablet-landscape-up {
     margin: 5px 15px 5px 18px;
   }
-}
-
-/***** VERTICAL CONTENT *****/
-.category-home-vertical-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  margin-bottom: 80px;
-  @include for-tablet-landscape-up {
-    flex-direction: row;
-    margin: 25px 0 0 25px;
-  }
-}
-
-.category-home-vertical {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  @include for-tablet-landscape-up {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.home-posts-wrap {
-  margin: 0 25px;
 }

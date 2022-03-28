@@ -1,0 +1,105 @@
+@import "mixins";
+
+/***** CURRENT EVENTS CARD *****/
+/***** CURRENT EVENTS CARD *****/
+/***** CURRENT EVENTS CARD *****/
+
+.font-category-header {
+  padding: 10px 0 10px 0px;
+  font-size: 30px;
+  color: $nutshell_green;
+  font-family: "Sanchez", serif;
+  @include for-tablet-landscape-up {
+    text-align: left;
+  }
+}
+.current-events {
+  margin: 0vh 0 10px 20px;
+  width: 100vw;
+  @include for-tablet-landscape-up {
+    margin: 0 25px 0 25px;
+  }
+  .ce-card-wrap {
+    display: flex;
+    margin: 0;
+    overflow-x: scroll;
+
+    @include for-tablet-landscape-up {
+      padding-top: 10px;
+      width: calc(100vw - 75px);
+    }
+  }
+  & ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.ce-map-l1 {
+  height: 100%;
+  width: auto;
+  display: flex;
+}
+.ce-map {
+  display: flex;
+}
+.current-events-card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  margin-right: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  @include for-tablet-landscape-up {
+    margin: 0px 0 0 25px;
+    width: 400px;
+  }
+}
+.ce-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.ce-card-subheader {
+  color: $nutshell_green;
+  background-color: #dbf2e9;
+  height: 30px;
+
+  width: 45vw;
+  border-radius: 4px;
+  margin: auto 0;
+  @include for-tablet-landscape-up {
+    height: 25px;
+    width: 145px;
+    margin: 15px 0 0 15px;
+  }
+}
+.subheader-text {
+  font-family: "Montserrat", SemiBold;
+  text-align: center;
+  margin: 4px auto;
+}
+.ce-card-postdate {
+  margin: auto 3vw;
+
+  @include for-tablet-landscape-up {
+    margin: 15px 15px 0 0;
+  }
+}
+.ce-card-main {
+  font-size: 16px;
+  margin: 1.5vh 3vw 0 3vw;
+  height: 225px;
+  overflow: scroll;
+  @include for-tablet-landscape-up {
+    margin: 15px 15px 0 15px;
+    height: 100%;
+  }
+}
+.ce-card-citation {
+  font-size: 12px;
+  color: $nutshell_purple;
+  margin: 0vh 0 0 3vw;
+  height: 14px;
+  @include for-tablet-landscape-up {
+    margin: 15px 0 15px 15px;
+  }
+}

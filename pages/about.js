@@ -5,8 +5,8 @@ export default function About() {
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["about-content-wrap"]}>
-          <div className={styles["font-title-header"]}>Nutshell News</div>
-          <div className={styles["font-category-header"]}>Adult Education</div>
+          <div className={styles["about-title-header"]}>Nutshell News</div>
+          <div className={styles["font-about-header"]}>Adult Education</div>
           <p className={styles["about-text"]}>
             {`To us, The News should be relevant, it should be useful, and it should be easy to follow.  So we tailor our News coverage a little differently,
               and include Life and Academic sections for you to learn about things that are more immediately useful for you than traditional news.`}
@@ -18,9 +18,7 @@ export default function About() {
             <br />
             {`Google and Apple aggregate headlines, we aggregate information.`}
           </p>
-          <div className={styles["font-category-header"]}>
-            Your Reading List
-          </div>
+          <div className={styles["font-about-header"]}>Your Reading List</div>
           <p className={styles["about-text"]}>
             {`To make things even easier, you can track articles so that new bullets will show up in your Reading List.  This way you read one article, once, 
               then get new updates on issues you care about directly in your Reading List, without having to skim the whole article again.`}

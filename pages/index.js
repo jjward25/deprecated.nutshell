@@ -29,10 +29,7 @@ function Home(props) {
         </div>
 
         <div className={styles["home-content-wrap"]}>
-          <HomeVerticals
-            section={props.newsContent[0].Categories}
-            userRL={[]}
-          />
+          <HomeVerticals section={props.newsContent[0].Categories} />
         </div>
       </main>
     </div>

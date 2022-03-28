@@ -1,13 +1,21 @@
 import HomePostCard from "../components/home-post-card";
-import HomePostCardExtension from "../components/home-post-card-extension";
 import styles from "../styles/Pages.module.scss";
 
-export default function Search() {
+export default function Search(props) {
   return (
     <div className={styles["container"]}>
       <main className={styles["main"]}>
         <div className={styles["search-content-wrap"]}>
-          <div className={styles["search-result-card"]}></div>
+          {category.PostArray.map((post) => {
+            return (
+              <HomePostCard
+                key={post.PostName}
+                postName={post.PostName}
+                subheaderList={post.SubheaderArray}
+                category={category.CategoryName}
+              />
+            );
+          })}
         </div>
       </main>
     </div>

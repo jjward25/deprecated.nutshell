@@ -1,4 +1,4 @@
-import styles from "../styles/Components.module.scss";
+import styles from "../styles/CurrentEventsCard.module.scss";
 import Link from "next/link";
 const ROUTE_POST_ID = "/[id]";
 
@@ -10,7 +10,7 @@ export default function CurrentEvents(props) {
       <div className={styles["ce-card-wrap"]}>
         {props.ceContent.map((post) => {
           return (
-            <div className={styles["ce-map"]}>
+            <div className={styles["ce-map-l1"]}>
               {post.SubheaderArray.map((subheader) => {
                 return (
                   <div className={styles["ce-map"]}>
