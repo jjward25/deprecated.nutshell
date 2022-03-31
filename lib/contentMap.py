@@ -8,7 +8,7 @@ pp = pprint.PrettyPrinter(indent=4)
 articleDF = pd.read_excel('C:/Users/Josep/OneDrive/Desktop/Coding/nutshell/public/NutshellSampleData.xlsx',engine='openpyxl')
 #print(articleDF)
 inputObj = articleDF.to_dict(orient='index')  ## Turns every row into an object
-#print(inputObj)
+print(inputObj)
 
 ##########
 # Create a master list with objects for each unique section
@@ -18,7 +18,7 @@ sectionList = []
 for contentRowObj in inputObj.values():
         if contentRowObj['Section'] not in sectionList:
             sectionList.append(contentRowObj['Section'])           
-#print(sectionList)
+print(sectionList)
 
 ########
 # Create arrays of Category object for each section
