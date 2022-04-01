@@ -5,7 +5,7 @@ from operator import itemgetter
 pp = pprint.PrettyPrinter(indent=4)
 
 ## Initial Excel reading and dataframe creation
-articleDF = pd.read_excel('C:/Users/Josep/OneDrive/Desktop/Coding/nutshell/public/NutshellSampleData.xlsx',engine='openpyxl')
+articleDF = pd.read_excel('C:/Users/Josep/OneDrive/Desktop/Coding/nutshell/public/NutshellSampleData.xlsx',engine='openpyxl',na_values="")
 #print(articleDF)
 inputObj = articleDF.to_dict(orient='index')  ## Turns every row into an object
 #print(inputObj)
@@ -44,8 +44,7 @@ for post in postList:
                 postDupes.append(postDict)
                 postNames.append(contentRowObj['PostName']) ## Fill list w postNames so the next time the postName comes up it's in the list and no object will be created    
             contentObjList.append(postDict)
-
-print(contentObjList)
+#print(contentObjList)
 
 ## Subheaders
 for postObj in contentObjList:     
@@ -54,7 +53,7 @@ for postObj in contentObjList:
     shNames = []
 ## Iterate through the dataset rows for category match, then create the post objects to append to the post array
     for contentRowObj in inputObj.values():
-        if contentRowObj['PostName'] == postObj['PostName']:
+        if contentRowObj['PostName'] == postObj['PostName'] and contentRowObj['Category'] == postObj['Category']:
             shDict = {}
             shDict.setdefault("SubheaderName",contentRowObj['SubheaderName'])
             shDict.setdefault("SubheaderPriority",contentRowObj['SubheaderPriority'])
@@ -98,7 +97,7 @@ for postObj in contentObjList:
         bulletList = [i for n, i in enumerate(bulletDupes) if i not in bulletList[n + 1:]]  
         bulletList = sorted(bulletList, key=itemgetter('BulletPriority'))  
         shObj.setdefault("BulletArray",bulletList)
-
+#print(postObjList)
 
 #pp.pprint(contentObjList)
 with open("postObjList.json", "w") as write_file:
