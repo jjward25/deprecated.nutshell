@@ -76,8 +76,8 @@
     "PostPriority": 1,
     "PostDate": "3/5/2022",
     "PostUpDate": "",
-    "Category": "Consumer Products",
-    "Section": "Life",
+    "Category": "PSAs",
+    "Section": "News",
     "SubheaderArray": [
       {
         "SubheaderName": "Introduction",
@@ -647,7 +647,7 @@
   },
   {
     "PostName": "How to Vote",
-    "PostPriority": 1,
+    "PostPriority": 2,
     "PostDate": "11/3/2021",
     "PostUpDate": "",
     "Category": "PSAs",

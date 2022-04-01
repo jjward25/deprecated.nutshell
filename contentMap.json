@@ -90,34 +90,6 @@
             ]
           }
         ]
-      },
-      {
-        "CategoryName": "Consumer Products",
-        "CategoryPriority": 2,
-        "PostArray": [
-          {
-            "PostName": "Current Recalls",
-            "PostPriority": 1,
-            "PostDate": "3/5/2022",
-            "PostUpDate": "",
-            "SubheaderArray": [
-              {
-                "SubheaderName": "Introduction",
-                "SubheaderPriority": 0,
-                "BulletArray": [
-                  {
-                    "BulletText": "Introduction text",
-                    "BulletPriority": 1,
-                    "BulletCite": "",
-                    "BulletLink": "",
-                    "BulletPostDate": "3/5/2022",
-                    "BulletUpDate": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -683,8 +655,30 @@
         "CategoryPriority": 4,
         "PostArray": [
           {
-            "PostName": "How to Vote",
+            "PostName": "Current Recalls",
             "PostPriority": 1,
+            "PostDate": "3/5/2022",
+            "PostUpDate": "",
+            "SubheaderArray": [
+              {
+                "SubheaderName": "Introduction",
+                "SubheaderPriority": 0,
+                "BulletArray": [
+                  {
+                    "BulletText": "Introduction text",
+                    "BulletPriority": 1,
+                    "BulletCite": "",
+                    "BulletLink": "",
+                    "BulletPostDate": "3/5/2022",
+                    "BulletUpDate": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "PostName": "How to Vote",
+            "PostPriority": 2,
             "PostDate": "11/3/2021",
             "PostUpDate": "",
             "SubheaderArray": [

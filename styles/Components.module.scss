@@ -51,14 +51,16 @@
   display: flex;
   margin: 10px 0;
   width: 300px;
-  height: 40px;
+  min-height: 40px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
 
   @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
-    height: 60px;
+    min-height: 60px;
+    height: auto;
     margin: 15px 0 0 0px;
     background-color: #ffffff;
     border-radius: 10px;
