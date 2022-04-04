@@ -40,8 +40,10 @@
 }
 .ce-map {
   display: flex;
-  :hover {
-    transform: scale(0.98);
+  @include for-tablet-landscape-up {
+    :hover {
+      transform: scale(0.98);
+    }
   }
 }
 .current-events-card {
