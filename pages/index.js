@@ -14,7 +14,7 @@ function Home(props) {
           name="description"
           content="Adult Education for the Modern World"
         />
-        <link rel="icon" href="/acorn.png" />
+        <link rel="icon" href="/acorn.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
