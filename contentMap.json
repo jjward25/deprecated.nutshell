@@ -90,6 +90,34 @@
             ]
           }
         ]
+      },
+      {
+        "CategoryName": "Cyber Security",
+        "CategoryPriority": 2,
+        "PostArray": [
+          {
+            "PostName": "Log4Shell",
+            "PostPriority": 1,
+            "PostDate": "4/1/2022",
+            "PostUpDate": "",
+            "SubheaderArray": [
+              {
+                "SubheaderName": "Introduction",
+                "SubheaderPriority": 0,
+                "BulletArray": [
+                  {
+                    "BulletText": "Introduction text",
+                    "BulletPriority": 1,
+                    "BulletCite": "Test",
+                    "BulletLink": "https://nutshell.news",
+                    "BulletPostDate": "4/1/2022",
+                    "BulletUpDate": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },

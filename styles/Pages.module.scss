@@ -140,6 +140,7 @@
   display: flex;
   margin: 25px 0;
   margin-left: 10px;
+  cursor: pointer;
   @include for-desktop-up {
     margin-left: 0;
   }

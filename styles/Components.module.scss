@@ -102,6 +102,7 @@
   width: 100%;
   text-align: left;
   padding-bottom: 3px;
+  cursor: pointer;
 }
 .post-card-carot {
   margin: auto 18px;
@@ -111,6 +112,7 @@
   height: 18px;
   width: 15px;
   transition: all 2 linear;
+  cursor: pointer;
 }
 .post-card-carot-open {
   margin: auto 18px;
@@ -120,6 +122,7 @@
   height: 20px;
   width: 15px;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 /***** BOOKMARK.JS *****/
 /***** BOOKMARK.JS *****/
