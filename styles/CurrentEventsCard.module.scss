@@ -40,6 +40,9 @@
 }
 .ce-map {
   display: flex;
+  :hover {
+    transform: scale(0.98);
+  }
 }
 .current-events-card {
   display: flex;
@@ -62,7 +65,7 @@
 }
 .ce-card-subheader {
   color: black;
-  background-color: #dbf2e9;
+  background-color: $bg-green;
   height: 30px;
   font-weight: 600;
   width: 45vw;
@@ -99,7 +102,7 @@
   }
 }
 .ce-card-citation {
-  font-size: 12px;
+  font-size: 14px;
   color: $nutshell_purple;
   margin: 0vh 0 0 3vw;
   height: 14px;

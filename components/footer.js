@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
 
           <Link href="/" passHref>
-            <h1 className={styles["headertitle"]}>nutshell news</h1>
+            <h1 className={styles["footer-title"]}>nutshell news</h1>
           </Link>
         </div>
 

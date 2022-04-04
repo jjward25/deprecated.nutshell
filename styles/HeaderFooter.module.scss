@@ -100,12 +100,13 @@
     width: 45vw;
     justify-content: space-between;
     padding: 0px;
+    padding-right: 100px;
     flex-wrap: wrap;
   }
 }
 .headerbuttons {
   font-size: 125%;
-  font-weight: 400;
+  font-weight: 600;
 }
 .headersearchwrap {
   display: none;
@@ -182,12 +183,20 @@
   align-content: center;
   justify-content: center;
 }
-
+.footer-title {
+  font-size: 20px;
+  width: auto;
+  font-weight: bold;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
 .footer-logo {
-  height: 35px;
-  width: 35px;
-  padding-right: 15px;
+  height: 30px;
+  width: 30px;
+
   margin: 0 auto;
+  margin-right: 5px;
   position: relative;
 }
 .footerbuttonslist {
@@ -208,10 +217,16 @@
 .subheader-list {
   height: 0;
   overflow: hidden;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
 }
 .subheader-list-open {
   display: flex;
   flex-direction: column;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
 }
