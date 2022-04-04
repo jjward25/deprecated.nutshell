@@ -23,9 +23,9 @@
     display: flex;
     margin: 0;
     overflow-x: scroll;
+    padding: 10px 0;
 
     @include for-tablet-landscape-up {
-      padding-top: 10px;
       width: calc(100vw - 75px);
     }
   }
@@ -49,6 +49,8 @@
   margin-right: 20px;
   background-color: #ffffff;
   border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
   @include for-tablet-landscape-up {
     margin: 0px 0 0 25px;
     width: 400px;
@@ -59,17 +61,19 @@
   justify-content: space-between;
 }
 .ce-card-subheader {
-  color: $nutshell_green;
+  color: black;
   background-color: #dbf2e9;
   height: 30px;
-
+  font-weight: 600;
   width: 45vw;
   border-radius: 4px;
   margin: auto 0;
+
   @include for-tablet-landscape-up {
     height: 25px;
     width: 145px;
     margin: 15px 0 0 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
 }
 .subheader-text {
