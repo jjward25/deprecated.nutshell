@@ -20,6 +20,8 @@
   justify-content: space-around;
   position: fixed;
   z-index: 10;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
   @include for-tablet-landscape-up {
     justify-content: space-between;
     flex-direction: row;
@@ -160,6 +162,8 @@
 .footerwrap {
   display: none;
   @include for-tablet-landscape-up {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
     height: 80px;
     width: 100%;
     max-width: 100vw;
