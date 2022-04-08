@@ -99,7 +99,7 @@
   font-size: 16px;
   margin: 1.5vh 3vw 0 3vw;
   height: 225px;
-
+  overflow: scroll;
   @include for-tablet-landscape-up {
     margin: 15px 15px 0 15px;
     height: 100%;
