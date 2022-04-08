@@ -34,15 +34,15 @@
 /***** HOME POST CARD *****/
 .full-home-card {
   margin: 10px 0;
-
   :hover {
-    background-color: $bg-green;
+    background-color: $bg-purple;
   }
 }
 .full-home-card-open {
   margin: 10px 0 20px 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  border: 1px solid $bg-purple;
 }
 .font-category-header {
   padding: 10px 0 10px 0px;
@@ -63,6 +63,7 @@
   height: auto;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid $bg-purple;
 
   @include for-tablet-landscape-up {
     display: flex;
@@ -86,17 +87,17 @@
     display: flex;
     width: 350px;
     height: 60px;
-    margin: 15px 0 0 0px;
+    margin: 0px 0 0 0px;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
-    background-color: $bg-yellow;
+    background-color: $bg-purple;
   }
 }
 .post-card-bookmark {
   margin: auto 10px;
   position: relative;
   width: 40px;
-  height: 30px;
+  height: 25px;
   @include for-tablet-landscape-up {
     margin: auto 15px;
     width: 45px;
@@ -111,6 +112,9 @@
   text-align: left;
   padding-bottom: 3px;
   cursor: pointer;
+  &:hover {
+    transform: scale(0.98);
+  }
 }
 .post-card-carot {
   margin: auto 18px;
@@ -173,7 +177,7 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 60px;
+  line-height: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   margin: auto 0;
@@ -182,7 +186,7 @@
     display: flex;
     width: 350px;
     border-radius: 0px;
-    background-color: $bg-yellow;
+    background-color: $bg-purple;
   }
 }
 .extension-subheader {
@@ -196,9 +200,9 @@
 .extension-logo-wrap {
   height: 25px;
   width: 25px;
-  margin: 5px 11px;
+  margin: 5px 11px 5px 12px;
   position: relative;
   @include for-tablet-landscape-up {
-    margin: 5px 15px 5px 18px;
+    margin: 5px 15px 5px 19px;
   }
 }

@@ -143,14 +143,21 @@
   cursor: pointer;
   @include for-desktop-up {
     margin-left: 0;
+    :hover {
+      transform: scale(0.99);
+    }
   }
 }
 .accordion-header-open {
   display: flex;
   margin: 25px 0 35px 0;
   margin-left: 10px;
+  cursor: pointer;
   @include for-desktop-up {
     margin-left: 0;
+    :hover {
+      transform: scale(0.99);
+    }
   }
 }
 .subheader-text {

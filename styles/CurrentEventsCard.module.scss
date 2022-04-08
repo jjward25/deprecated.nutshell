@@ -13,9 +13,52 @@
     text-align: left;
   }
 }
+.ce-horizontal-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include for-tablet-landscape-up {
+    margin: 0px;
+
+    ::-webkit-scrollbar {
+      display: flex;
+      height: 8px;
+      width: 1px;
+    }
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: $bg_purple;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: $bg-green;
+      border-radius: 10px;
+      border: 1px solid $nutshell_green;
+    }
+  }
+}
+.scroll-button {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+    margin: 45px 10px 75px 0px;
+    background-color: $bg-green;
+    border: 1px solid $nutshell-green;
+    color: $nutshell-green;
+
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $nutshell_purple;
+      background-color: $bg-purple;
+      color: $nutshell_purple;
+    }
+  }
+}
 .current-events {
   margin: 0vh 0 10px 20px;
   width: 100vw;
+
   @include for-tablet-landscape-up {
     margin: 0 0px 0 25px;
     padding-right: 0px;
@@ -25,14 +68,12 @@
     margin: 0;
     overflow-x: scroll;
     padding: 10px 0;
+    padding-left: 10px;
 
     @include for-tablet-landscape-up {
       width: calc(100vw - 75px);
       padding: 10px 0 35px 20px;
     }
-  }
-  ::-webkit-scrollbar {
-    display: none;
   }
 }
 .ce-map-l1 {
@@ -44,7 +85,8 @@
   display: flex;
   @include for-tablet-landscape-up {
     :hover {
-      transform: scale(0.98);
+      transform: scale(1.02);
+      background-color: $bg-purple;
     }
   }
 }
@@ -54,13 +96,20 @@
   height: 300px;
   width: 300px;
   margin-right: 20px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid $bg-purple;
 
   @include for-tablet-landscape-up {
     margin: 0px 25px 0 0px;
     width: 400px;
+    height: 350px;
+    :hover {
+      transform: scale(1);
+      background-color: $bg-purple;
+    }
   }
 }
 .ce-card-header {
@@ -81,6 +130,11 @@
     width: 145px;
     margin: 15px 0 0 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    :hover {
+      background-color: $bg-green;
+      padding: 3px;
+      margin: 0;
+    }
   }
 }
 .subheader-text {
@@ -90,9 +144,12 @@
 }
 .ce-card-postdate {
   margin: auto 3vw;
-
+  color: $nutshell_purple;
+  font-weight: 500;
+  font-size: 16px;
   @include for-tablet-landscape-up {
     margin: 15px 15px 0 0;
+    font-weight: 500;
   }
 }
 .ce-card-main {
@@ -101,9 +158,21 @@
   height: 225px;
   overflow: scroll;
   @include for-tablet-landscape-up {
-    margin: 15px 15px 0 15px;
+    margin: 15px 20px 0 20px;
     height: 100%;
-    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+    /* this will hide the scrollbar in mozilla based browsers */
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    /* this will hide the scrollbar in internet explorers */
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+      display: none;
+      width: 0 !important;
+    }
   }
 }
 .ce-card-citation {
@@ -113,44 +182,5 @@
   height: 14px;
   @include for-tablet-landscape-up {
     margin: 15px 0 15px 15px;
-  }
-}
-.ce-horizontal-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-
-  @include for-tablet-landscape-up {
-    margin: 0px;
-
-    ::-webkit-scrollbar {
-      display: flex;
-      height: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      border-radius: 10px;
-      background: $bg_purple;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-color: $bg-green;
-      border-radius: 10px;
-      border: 3px solid $nutshell_green;
-    }
-  }
-}
-.scroll-button {
-  display: none;
-  @include for-tablet-landscape-up {
-    display: block;
-    margin: 15px 0 45px 2px;
-    border: 1px solid $nutshell-green;
-    background-color: $bg-green;
-    border-radius: 8px;
-    cursor: pointer;
-    &:hover {
-      background-color: $bg_purple;
-      border: 1px solid $bg-yellow;
-      color: $bg-yellow;
-    }
   }
 }
