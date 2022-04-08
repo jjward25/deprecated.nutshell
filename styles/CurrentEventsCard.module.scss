@@ -103,6 +103,7 @@
   @include for-tablet-landscape-up {
     margin: 15px 15px 0 15px;
     height: 100%;
+    overflow: hidden;
   }
 }
 .ce-card-citation {
