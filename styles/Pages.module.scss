@@ -10,8 +10,7 @@
   font-size: 48px;
   color: $nutshell_green;
   font-family: "Sanchez", regular;
-  margin: auto;
-  margin: auto 10px;
+  margin: 10px 10px;
   display: flex;
   flex-wrap: wrap;
   max-width: 100vw;
@@ -23,15 +22,15 @@
 /**** GLOBAL ELEMENTS *****/
 .container {
   padding: 0 0;
-  min-height: calc(100vh - 148px);
+  min-height: calc(100vh - 80px);
   height: 100%;
 }
 .main {
   background-color: #f4f7f9;
   min-height: 100vh;
-  margin-top: 60px;
+  padding-top: 60px;
   @include for-desktop-up {
-    min-height: calc(100vh - 148px);
+    min-height: calc(100vh - 80px);
     height: 100%;
   }
 }
@@ -290,15 +289,23 @@
 /**** READING LIST ********/
 .readinglist-wrap {
   background-color: #f4f7f9;
-  min-height: 100vh;
-  margin-top: 60px;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
   @include for-desktop-up {
-    min-height: calc(100vh - 148px);
-    height: 100%;
-    flex-direction: row;
+    height: auto;
+    max-width: 750px;
+    margin: auto;
   }
+}
+.readinglist-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .readinglist-left {
   display: none;
