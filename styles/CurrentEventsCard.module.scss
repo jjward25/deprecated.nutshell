@@ -5,7 +5,7 @@
 /***** CURRENT EVENTS CARD *****/
 
 .font-category-header {
-  padding: 10px 0 10px 0px;
+  padding: 15px 0 10px 0px;
   font-size: 30px;
   color: $nutshell_green;
   font-family: "Sanchez", serif;
@@ -18,7 +18,7 @@
   width: 100vw;
   @include for-tablet-landscape-up {
     margin: 0 0px 0 25px;
-    padding-right: 50px;
+    padding-right: 0px;
   }
   .ce-card-wrap {
     display: flex;
@@ -28,7 +28,7 @@
 
     @include for-tablet-landscape-up {
       width: calc(100vw - 75px);
-      padding: 10px 0 35px 0;
+      padding: 10px 0 35px 20px;
     }
   }
   ::-webkit-scrollbar {
@@ -119,8 +119,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   @include for-tablet-landscape-up {
-    margin: 0 25px;
+    margin: 0px;
 
     ::-webkit-scrollbar {
       display: flex;
@@ -128,7 +129,7 @@
     }
     ::-webkit-scrollbar-track {
       border-radius: 10px;
-      background: $nutshell_purple;
+      background: $bg_purple;
     }
     ::-webkit-scrollbar-thumb {
       background-color: $bg-green;
@@ -137,13 +138,19 @@
     }
   }
 }
-.next-button {
-  right: 0;
-  margin: auto 0;
-
-  height: 100%;
-  transition: all 0.5s ease-in-out;
-  :hover {
-    transform: translateX(25px);
+.scroll-button {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+    margin: 15px 0 45px 2px;
+    border: 1px solid $nutshell-green;
+    background-color: $bg-green;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg_purple;
+      border: 1px solid $bg-yellow;
+      color: $bg-yellow;
+    }
   }
 }

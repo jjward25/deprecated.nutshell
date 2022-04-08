@@ -1,13 +1,18 @@
 import styles from "../styles/CurrentEventsCard.module.scss";
 import Link from "next/link";
+import React, { useRef } from "react";
 const ROUTE_POST_ID = "/[id]";
 
 export default function CurrentEvents(props) {
+  const ref = useRef(null);
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
   return (
     <div className={styles["current-events"]}>
       <div className={styles["font-category-header"]}>Current Events </div>
       <div className={styles["ce-horizontal-wrap"]}>
-        <div className={styles["ce-card-wrap"]}>
+        <div className={styles["ce-card-wrap"]} ref={ref}>
           {props.ceContent.map((post) => {
             return (
               <div className={styles["ce-map-l1"]}>
@@ -80,6 +85,10 @@ export default function CurrentEvents(props) {
             );
           })}
         </div>
+        <button
+          className={styles["scroll-button"]}
+          onClick={() => scroll(850)}
+        >{`>`}</button>
       </div>
     </div>
   );
