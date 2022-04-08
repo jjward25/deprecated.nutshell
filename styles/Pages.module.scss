@@ -31,9 +31,8 @@
   min-height: 100vh;
   margin-top: 60px;
   @include for-desktop-up {
-    height: calc(100vh - 140px);
+    min-height: calc(100vh - 148px);
     height: 100%;
-    overflow-y: hidden;
   }
 }
 
