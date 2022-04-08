@@ -1,29 +1,5 @@
 [
   {
-    "PostName": "Hubble Telescope",
-    "PostPriority": 1,
-    "PostDate": "1/1/2021",
-    "PostUpDate": "",
-    "Category": "Space",
-    "Section": "Academic",
-    "SubheaderArray": [
-      {
-        "SubheaderName": "Maintenance",
-        "SubheaderPriority": 1,
-        "BulletArray": [
-          {
-            "BulletText": "Entered safe mode again",
-            "BulletPriority": 1,
-            "BulletCite": "NASA",
-            "BulletLink": "www.nasa.gov",
-            "BulletPostDate": "1/1/2021",
-            "BulletUpDate": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "PostName": "Web3 Technology",
     "PostPriority": 1,
     "PostDate": "3/5/2022",
@@ -48,11 +24,35 @@
     ]
   },
   {
+    "PostName": "Hubble Telescope",
+    "PostPriority": 1,
+    "PostDate": "1/1/2021",
+    "PostUpDate": "",
+    "Category": "Space",
+    "Section": "Academic",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Maintenance",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Entered safe mode again",
+            "BulletPriority": 1,
+            "BulletCite": "NASA",
+            "BulletLink": "www.nasa.gov",
+            "BulletPostDate": "1/1/2021",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "PostName": "Data Science",
     "PostPriority": 1,
     "PostDate": "1/1/2021",
     "PostUpDate": "",
-    "Category": "Professional Development",
+    "Category": "Career Development",
     "Section": "Life",
     "SubheaderArray": [
       {
@@ -444,60 +444,8 @@
     ]
   },
   {
-    "PostName": "Consolidating Wealth",
-    "PostPriority": 2,
-    "PostDate": "3/31/2022",
-    "PostUpDate": "",
-    "Category": "Ongoing News",
-    "Section": "News",
-    "SubheaderArray": [
-      {
-        "SubheaderName": "Background",
-        "SubheaderPriority": 1,
-        "BulletArray": [
-          {
-            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 1,
-            "BulletCite": "Test",
-            "BulletLink": "https://nutshell.news",
-            "BulletPostDate": "3/31/2022",
-            "BulletUpDate": ""
-          }
-        ]
-      },
-      {
-        "SubheaderName": "Impact",
-        "SubheaderPriority": 2,
-        "BulletArray": [
-          {
-            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 1,
-            "BulletCite": "Test",
-            "BulletLink": "https://nutshell.news",
-            "BulletPostDate": "3/31/2022",
-            "BulletUpDate": ""
-          }
-        ]
-      },
-      {
-        "SubheaderName": "Contributing Factors",
-        "SubheaderPriority": 3,
-        "BulletArray": [
-          {
-            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 1,
-            "BulletCite": "Test",
-            "BulletLink": "https://nutshell.news",
-            "BulletPostDate": "3/31/2022",
-            "BulletUpDate": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "PostName": "Declining Effects of Antibiotics",
-    "PostPriority": 3,
+    "PostPriority": 2,
     "PostDate": "3/31/2022",
     "PostUpDate": "",
     "Category": "Ongoing News",
@@ -521,7 +469,7 @@
   },
   {
     "PostName": "Money in Politics",
-    "PostPriority": 4,
+    "PostPriority": 3,
     "PostDate": "3/31/2022",
     "PostUpDate": "",
     "Category": "Ongoing News",
@@ -556,7 +504,7 @@
         ]
       },
       {
-        "SubheaderName": "How it's Enabled",
+        "SubheaderName": "Super PACs",
         "SubheaderPriority": 3,
         "BulletArray": [
           {
@@ -566,10 +514,68 @@
             "BulletLink": "https://nutshell.news",
             "BulletPostDate": "3/31/2022",
             "BulletUpDate": ""
-          },
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Gerrymandering",
+        "SubheaderPriority": 4,
+        "BulletArray": [
           {
             "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 2,
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Incumbent's Advantage",
+        "SubheaderPriority": 5,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "How it's Enabled",
+        "SubheaderPriority": 6,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Climate Change",
+    "PostPriority": 4,
+    "PostDate": "3/31/2022",
+    "PostUpDate": "",
+    "Category": "Ongoing News",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "What the Scientists Say",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
             "BulletCite": "Test",
             "BulletLink": "https://nutshell.news",
             "BulletPostDate": "3/31/2022",
@@ -632,6 +638,152 @@
       {
         "SubheaderName": "Statistics",
         "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Governing Philosophy",
+    "PostPriority": 2,
+    "PostDate": "3/31/2022",
+    "PostUpDate": "",
+    "Category": "Melting Pot",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Mainstream GOP Policies",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Mainstream Democratic Policies",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Libertarianism",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Democratic Socialism",
+        "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Capitalism",
+        "SubheaderPriority": 5,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Law Enforcement",
+    "PostPriority": 3,
+    "PostDate": "3/31/2022",
+    "PostUpDate": "",
+    "Category": "Melting Pot",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Policing",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Police-Prosecution Relationships",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Sentencing",
+        "SubheaderPriority": 3,
         "BulletArray": [
           {
             "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",

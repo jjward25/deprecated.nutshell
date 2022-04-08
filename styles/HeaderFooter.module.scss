@@ -5,6 +5,7 @@
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
+  max-height: 100vh;
 }
 /***** HEADER *****/
 /***** HEADER *****/
@@ -188,6 +189,8 @@
     border-top: 1px solid #eaeaea;
     background-color: #ffffff;
     color: #7a8398;
+    position: fixed;
+    bottom: 0px;
   }
 }
 .footer-left {
