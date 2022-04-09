@@ -54,9 +54,11 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   display: flex;
-  margin: 10px 0;
+  align-items: center;
+  margin: auto;
   width: 300px;
   min-height: 40px;
+  line-height: 30px;
   height: auto;
   border-radius: 10px;
   overflow: hidden;
@@ -106,10 +108,10 @@
   margin: auto 0;
   width: 100%;
   text-align: left;
-  padding-bottom: 3px;
   cursor: pointer;
+
   &:hover {
-    transform: scale(0.98);
+    color: $nutshell_green;
   }
 }
 .post-card-carot {

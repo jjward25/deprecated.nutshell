@@ -148,6 +148,9 @@
   @include for-tablet-landscape-up {
     margin: 15px 15px 0 0;
     font-weight: 500;
+    &:hover {
+      color: $nutshell_green;
+    }
   }
 }
 .ce-card-main {
@@ -180,5 +183,8 @@
   height: 14px;
   @include for-tablet-landscape-up {
     margin: 15px 0 15px 15px;
+    &:hover {
+      color: $nutshell_green;
+    }
   }
 }
