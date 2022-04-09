@@ -57,7 +57,7 @@
   align-items: center;
   margin: auto;
   width: 300px;
-  min-height: 40px;
+  min-height: 60px;
   line-height: 30px;
   height: auto;
   border-radius: 10px;
@@ -68,7 +68,7 @@
     display: flex;
     width: 350px;
     min-height: 60px;
-    height: auto;
+    line-height: 30px;
     margin: 15px 0 0 0px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -80,12 +80,14 @@
   overflow: hidden;
   display: flex;
   width: 300px;
-  height: 60px;
+  min-height: 60px;
+  line-height: 30px;
 
   @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
-    height: 60px;
+    min-height: 60px;
+    line-height: 30px;
     margin: 0px 0 0 0px;
     background-color: #ffffff;
     border-radius: 10px 10px 0 0;
