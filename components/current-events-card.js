@@ -10,7 +10,7 @@ export default function CurrentEvents(props) {
   };
   return (
     <div className={styles["current-events"]}>
-      <div className={styles["font-category-header"]}>Current Events </div>
+      <div className={styles["font-category-header"]}>Headline News </div>
       <div className={styles["ce-horizontal-wrap"]}>
         <div className={styles["ce-card-wrap"]} ref={ref}>
           {props.ceContent.map((post) => {
