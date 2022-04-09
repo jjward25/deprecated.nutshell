@@ -86,7 +86,6 @@
   @include for-tablet-landscape-up {
     :hover {
       transform: scale(1.02);
-      background-color: $bg-purple;
     }
   }
 }
@@ -108,7 +107,6 @@
     height: 350px;
     :hover {
       transform: scale(1);
-      background-color: $bg-purple;
     }
   }
 }
