@@ -72,8 +72,88 @@
     ]
   },
   {
-    "PostName": "Log4Shell",
+    "PostName": "What You Can Do",
     "PostPriority": 1,
+    "PostDate": "4/1/2022",
+    "PostUpDate": "",
+    "Category": "Cyber Security",
+    "Section": "Life",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 0,
+        "BulletArray": [
+          {
+            "BulletText": "Introduction text",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "4/1/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Basics for Privacy and Protection",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "4/1/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Intermediate",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "4/1/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Advanced",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "4/1/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Expert",
+        "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "4/1/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Log4Shell",
+    "PostPriority": 2,
     "PostDate": "4/1/2022",
     "PostUpDate": "",
     "Category": "Cyber Security",
@@ -444,32 +524,8 @@
     ]
   },
   {
-    "PostName": "Declining Effects of Antibiotics",
-    "PostPriority": 2,
-    "PostDate": "3/31/2022",
-    "PostUpDate": "",
-    "Category": "Ongoing News",
-    "Section": "News",
-    "SubheaderArray": [
-      {
-        "SubheaderName": "Why it Matters",
-        "SubheaderPriority": 1,
-        "BulletArray": [
-          {
-            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 1,
-            "BulletCite": "Test",
-            "BulletLink": "https://nutshell.news",
-            "BulletPostDate": "3/31/2022",
-            "BulletUpDate": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
     "PostName": "Money in Politics",
-    "PostPriority": 3,
+    "PostPriority": 2,
     "PostDate": "3/31/2022",
     "PostUpDate": "",
     "Category": "Ongoing News",
@@ -562,16 +618,162 @@
     ]
   },
   {
-    "PostName": "Climate Change",
-    "PostPriority": 4,
+    "PostName": "Declining Effects of Antibiotics",
+    "PostPriority": 3,
     "PostDate": "3/31/2022",
     "PostUpDate": "",
     "Category": "Ongoing News",
     "Section": "News",
     "SubheaderArray": [
       {
-        "SubheaderName": "What the Scientists Say",
+        "SubheaderName": "Background: Scope and Causes",
         "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "What Experts are Saying and Doing",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Bacteriophages and Potential Next Steps",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Water Rights",
+    "PostPriority": 1,
+    "PostDate": "3/31/2022",
+    "PostUpDate": "",
+    "Category": "Developing News",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 0,
+        "BulletArray": [
+          {
+            "BulletText": "Introduction text",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Domestic Water Sources, Status & Rights",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Historical Water Levels",
+        "SubheaderPriority": 2,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "International Water Rights",
+        "SubheaderPriority": 3,
+        "BulletArray": [
+          {
+            "BulletText": "Taiwan Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Taiwan Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "PostName": "Fertilizer Shortage",
+    "PostPriority": 2,
+    "PostDate": "3/31/2022",
+    "PostUpDate": "",
+    "Category": "Developing News",
+    "Section": "News",
+    "SubheaderArray": [
+      {
+        "SubheaderName": "Introduction",
+        "SubheaderPriority": 0,
+        "BulletArray": [
+          {
+            "BulletText": "Introduction text",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Phosphorous",
+        "SubheaderPriority": 1,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "War in Ukraine",
+        "SubheaderPriority": 2,
         "BulletArray": [
           {
             "BulletText": "Bullet2 text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
@@ -594,7 +796,7 @@
     "Section": "News",
     "SubheaderArray": [
       {
-        "SubheaderName": "History",
+        "SubheaderName": "History of Vaccine Development",
         "SubheaderPriority": 1,
         "BulletArray": [
           {
@@ -608,7 +810,7 @@
         ]
       },
       {
-        "SubheaderName": "Covid Vaccine Development",
+        "SubheaderName": "History of Vaccine Use in the US",
         "SubheaderPriority": 2,
         "BulletArray": [
           {
@@ -622,7 +824,7 @@
         ]
       },
       {
-        "SubheaderName": "Public Commentary",
+        "SubheaderName": "Covid Vaccine Development",
         "SubheaderPriority": 3,
         "BulletArray": [
           {
@@ -636,8 +838,22 @@
         ]
       },
       {
-        "SubheaderName": "Statistics",
+        "SubheaderName": "Public Commentary",
         "SubheaderPriority": 4,
+        "BulletArray": [
+          {
+            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
+            "BulletPriority": 1,
+            "BulletCite": "Test",
+            "BulletLink": "https://nutshell.news",
+            "BulletPostDate": "3/31/2022",
+            "BulletUpDate": ""
+          }
+        ]
+      },
+      {
+        "SubheaderName": "Statistics",
+        "SubheaderPriority": 5,
         "BulletArray": [
           {
             "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
@@ -652,7 +868,7 @@
     ]
   },
   {
-    "PostName": "Governing Philosophy",
+    "PostName": "Abortion",
     "PostPriority": 2,
     "PostDate": "3/31/2022",
     "PostUpDate": "",
@@ -660,7 +876,7 @@
     "Section": "News",
     "SubheaderArray": [
       {
-        "SubheaderName": "Mainstream GOP Policies",
+        "SubheaderName": "Abortion History in the US",
         "SubheaderPriority": 1,
         "BulletArray": [
           {
@@ -674,7 +890,7 @@
         ]
       },
       {
-        "SubheaderName": "Mainstream Democratic Policies",
+        "SubheaderName": "Legal and Public Arguments For",
         "SubheaderPriority": 2,
         "BulletArray": [
           {
@@ -688,7 +904,7 @@
         ]
       },
       {
-        "SubheaderName": "Libertarianism",
+        "SubheaderName": "Legal and Public Arguments Against",
         "SubheaderPriority": 3,
         "BulletArray": [
           {
@@ -702,22 +918,8 @@
         ]
       },
       {
-        "SubheaderName": "Democratic Socialism",
+        "SubheaderName": "About The Procedure",
         "SubheaderPriority": 4,
-        "BulletArray": [
-          {
-            "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
-            "BulletPriority": 1,
-            "BulletCite": "Test",
-            "BulletLink": "https://nutshell.news",
-            "BulletPostDate": "3/31/2022",
-            "BulletUpDate": ""
-          }
-        ]
-      },
-      {
-        "SubheaderName": "Capitalism",
-        "SubheaderPriority": 5,
         "BulletArray": [
           {
             "BulletText": "Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text Bullet text bullet text ",
@@ -754,7 +956,7 @@
         ]
       },
       {
-        "SubheaderName": "Policing",
+        "SubheaderName": "Policing and Prosecution",
         "SubheaderPriority": 1,
         "BulletArray": [
           {
@@ -768,7 +970,7 @@
         ]
       },
       {
-        "SubheaderName": "Police-Prosecution Relationships",
+        "SubheaderName": "The Judicial System",
         "SubheaderPriority": 2,
         "BulletArray": [
           {
