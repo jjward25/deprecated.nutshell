@@ -34,12 +34,18 @@
 /***** HOME POST CARD *****/
 .full-home-card {
   margin: 10px 0;
+  @include for-tablet-landscape-up {
+    margin: 20px 0;
+  }
 }
 .full-home-card-open {
   margin: 10px 0 20px 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: 1px solid $bg-purple;
+  @include for-tablet-landscape-up {
+    margin: 20px 0 20px 0;
+  }
 }
 .font-category-header {
   padding: 10px 0 10px 0px;
