@@ -1,14 +1,30 @@
 import Link from "next/link";
 import styles from "../styles/HeaderFooter.module.scss";
 import Image from "next/image";
-
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function HeaderMenu() {
+  const router = useRouter();
   const [rotateChevron, setRotateChevron] = useState(false);
   function mobileMenu() {
     setRotateChevron(!rotateChevron);
   }
+
+  const [searchTerm, setSearchTerm] = useState("Search"); //set searchterm
+  const handleChange = (searchValue) => {
+    setSearchTerm(searchValue.toLowerCase());
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("searchTerm");
+      localStorage.setItem(
+        "searchTerm",
+        JSON.stringify(searchValue.toLowerCase())
+      );
+    } // this loop updates the searchterm when the input is updated, and sets it to lowercase and saves to localStorage
+    //console.log(searchValue.toLowerCase());
+    //console.log(localStorage.getItem("searchTerm"));
+  };
+
   return (
     <div className={styles["headerwrap"]}>
       <div
@@ -116,9 +132,16 @@ export default function HeaderMenu() {
         <span className={styles["search-icon-wrap"]}>
           <Image src="/searchicon.svg" alt="search" layout="fill" />
         </span>
-        <Link href="/search">
-          <p className={styles["headersearchtext"]}> Search</p>
-        </Link>
+        <form
+          className={styles["headersearchtext-wrap"]}
+          onSubmit={() => router.push("/search")}
+        >
+          <input
+            className={styles["headersearchtext"]}
+            placeholder="Search"
+            onChange={(e) => handleChange(e.target.value)}
+          />
+        </form>
       </div>
 
       <div className={styles["headerlogin"]}>Login</div>
