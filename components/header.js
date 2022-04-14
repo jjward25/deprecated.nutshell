@@ -132,10 +132,7 @@ export default function HeaderMenu() {
         <span className={styles["search-icon-wrap"]}>
           <Image src="/searchicon.svg" alt="search" layout="fill" />
         </span>
-        <form
-          className={styles["headersearchtext-wrap"]}
-          onSubmit={() => router.push("/search")}
-        >
+        <form className={styles["headersearchtext-wrap"]} action="/search">
           <input
             className={styles["headersearchtext"]}
             placeholder="Search"
