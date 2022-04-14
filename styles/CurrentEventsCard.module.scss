@@ -41,7 +41,7 @@
   display: none;
   @include for-tablet-landscape-up {
     display: block;
-    margin: 45px 10px 75px 0px;
+    margin: 45px auto 75px auto;
     background-color: $bg-green;
     border: 1px solid $nutshell-green;
     color: $nutshell-green;
