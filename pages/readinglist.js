@@ -13,8 +13,8 @@ export default function ReadingList() {
     return (
       <div className={styles["container"]}>
         <main className={styles["main"]}>
-          <div className={styles["readinglist-wrap"]}>
-            <div className={styles["readinglist-content"]}>
+          <div className={styles["readinglist-wrap-main"]}>
+            <div className={styles["readinglist-content-main"]}>
               <div className={styles["readinglist-left"]}>
                 <div>User: {user.email}</div>
                 <div>User: {}</div>

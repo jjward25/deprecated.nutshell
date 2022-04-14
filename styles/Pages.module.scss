@@ -318,11 +318,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   @include for-desktop-up {
     min-height: auto;
     justify-content: center;
   }
+}
+.reading-list-wrap-main {
+  min-height: calc(100vh - 148px);
+  width: 100vw;
+}
+.readinglist-content-main {
+  height: 100%;
+  width: 100%;
 }
 .readinglist-left {
   display: none;
