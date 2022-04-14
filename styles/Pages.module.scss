@@ -271,7 +271,7 @@
   background-color: #ffffff;
 }
 .about-text {
-  padding: 15px 0px 5px 0px;
+  padding: 10px 0px 5px 0px;
 }
 .about-title-header {
   font-size: 48px;
@@ -301,20 +301,28 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  height: calc(100vh - 60px);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  min-height: calc(100vh - 148px);
   @include for-desktop-up {
     height: auto;
     max-width: 750px;
     margin: auto;
+    padding: 20px;
   }
 }
 .readinglist-content {
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+
+  @include for-desktop-up {
+    min-height: auto;
+    justify-content: center;
+  }
 }
 .readinglist-left {
   display: none;
