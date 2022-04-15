@@ -3,7 +3,7 @@ import User from "../../lib/userModel";
 
 export default async function handler(req, res) {
   const { db } = await connectToDatabase();
-  const req = await db.collection("users");
+  let req = await db.collection("users");
 
   switch (method) {
     case "GET":
