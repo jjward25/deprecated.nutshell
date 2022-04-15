@@ -178,9 +178,12 @@
   flex-direction: column;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
-  width: 350px;
+  width: 300px;
   padding-bottom: 8px;
   background-color: #ffffff;
+  @include for-tablet-landscape-up {
+    width: 350px;
+  }
 }
 .home-post-card-extension {
   display: flex;

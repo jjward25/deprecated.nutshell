@@ -6,13 +6,16 @@ import { connectToDatabase } from "../util/mongodb";
 export default function ReadingList(props) {
   // define the user, error message, and loading status
   const { user, error, isLoading } = useUser();
-  console.log(props.users);
+  console.log(props.userList[0].email);
   console.log(user);
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error</div>;
 
   // if user is logged in, return the reading list
   if (user) {
+    var userData = props.userList.filter(
+      (apiUser) => (apiUser.email = user.email)
+    );
     return (
       <div className={styles["container"]}>
         <main className={styles["main"]}>
@@ -119,9 +122,22 @@ export default function ReadingList(props) {
 }
 export async function getServerSideProps() {
   const { db } = await connectToDatabase();
-  const req = await db.collection("users").find().sort().limit(1000).toArray();
+  const req = await db
+    .collection("users")
+    .find({ email: "joseph.ward@outlook.com" })
+    .sort()
+    .limit(1000)
+    .toArray();
   const userData = await JSON.parse(JSON.stringify(req));
   /* find all the data in our database */
 
-  return { props: { users: userData } };
+  const req2 = await db
+    .collection("PostObjList")
+    .find({})
+    .sort()
+    .limit(1000)
+    .toArray();
+  const postData = await JSON.parse(JSON.stringify(req2));
+
+  return { props: { userList: userData, postList: postData } };
 }
