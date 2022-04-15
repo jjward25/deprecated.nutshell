@@ -1,10 +1,13 @@
 import styles from "../styles/Pages.module.scss";
 import Image from "next/image";
 import { useUser } from "@auth0/nextjs-auth0";
+import { connectToDatabase } from "../util/mongodb";
 
-export default function ReadingList() {
+export default function ReadingList(props) {
   // define the user, error message, and loading status
   const { user, error, isLoading } = useUser();
+  console.log(props.users);
+  console.log(user);
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error</div>;
 
@@ -113,4 +116,12 @@ export default function ReadingList() {
       </main>
     </div>
   );
+}
+export async function getServerSideProps() {
+  const { db } = await connectToDatabase();
+  const req = await db.collection("users").find().sort().limit(1000).toArray();
+  const userData = await JSON.parse(JSON.stringify(req));
+  /* find all the data in our database */
+
+  return { props: { users: userData } };
 }
