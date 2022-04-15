@@ -2,8 +2,8 @@ import { connectToDatabase } from "../../util/mongodb";
 import User from "../../lib/userModel";
 
 export default async function handler(req, res) {
-  const { db } = await connectToDatabase();
-  let req = await db.collection("users");
+  const { method } = req;
+  await db.collection("users");
 
   switch (method) {
     case "GET":
