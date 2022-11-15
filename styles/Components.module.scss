@@ -63,7 +63,7 @@
   align-items: center;
   margin: auto;
   width: 300px;
-  min-height: 60px;
+  min-height: 50px;
   line-height: 30px;
   height: auto;
   border-radius: 10px;
@@ -73,11 +73,18 @@
   @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
-    min-height: 60px;
+    min-height: 50px;
     line-height: 30px;
     margin: 0px 0 0 0px;
-    background-color: #ffffff;
     border-radius: 10px;
+    background-color: $nutshell-purple;
+    border: 1px solid $nutshell-green;
+    color: $nutshell-green;
+    &:hover {
+      background-color: #ffffff;
+      color: black;
+      border:none;
+    }
   }
 }
 .home-post-card-open {
@@ -86,13 +93,14 @@
   overflow: hidden;
   display: flex;
   width: 300px;
-  min-height: 60px;
+  min-height: 50px;
   line-height: 30px;
+  color: $nutshell-green;
 
   @include for-tablet-landscape-up {
     display: flex;
     width: 350px;
-    min-height: 60px;
+    min-height: 50px;
     line-height: 30px;
     margin: 0px 0 0 0px;
     background-color: #ffffff;
@@ -116,11 +124,9 @@
   margin: auto 0;
   width: 100%;
   text-align: left;
+  line-height: 30px;
+  padding: 7px 0;
   cursor: pointer;
-
-  &:hover {
-    color: $nutshell_green;
-  }
 }
 .post-card-carot {
   margin: auto 18px;
@@ -181,6 +187,7 @@
   width: 300px;
   padding-bottom: 8px;
   background-color: #ffffff;
+  color: $nutshell-purple;
   @include for-tablet-landscape-up {
     width: 350px;
   }
@@ -208,10 +215,17 @@
   margin: auto 0;
   font-weight: 600;
   text-align: left;
+  cursor: pointer;
+  &:hover {
+    color: $nutshell_green;
+  }
+  
 }
 .extension-logo-wrap {
-  height: 25px;
-  width: 25px;
+  height: auto;
+  max-height: 30px;
+  width: 100%;
+  max-width: 25px;
   margin: 5px 11px 5px 12px;
   position: relative;
   @include for-tablet-landscape-up {

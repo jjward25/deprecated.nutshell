@@ -31,9 +31,8 @@
       background: $bg_purple;
     }
     ::-webkit-scrollbar-thumb {
-      background-color: $bg-green;
+      background-color: $nutshell-green;
       border-radius: 10px;
-      border: 1px solid $nutshell_green;
     }
   }
 }
@@ -42,16 +41,15 @@
   @include for-tablet-landscape-up {
     display: block;
     margin: 45px auto 75px auto;
-    background-color: $bg-green;
+    background-color: $nutshell-purple;
     border: 1px solid $nutshell-green;
     color: $nutshell-green;
-
     border-radius: 8px;
     cursor: pointer;
     &:hover {
-      border: 1px solid $nutshell_purple;
-      background-color: $bg-purple;
+      background-color: $nutshell-green;
       color: $nutshell_purple;
+      font-weight: 700;
     }
   }
 }
@@ -73,6 +71,7 @@
     @include for-tablet-landscape-up {
       width: calc(100vw - 75px);
       padding: 10px 0 35px 20px;
+
     }
   }
 }
@@ -85,7 +84,7 @@
   display: flex;
   @include for-tablet-landscape-up {
     :hover {
-      transform: scale(1.02);
+      transform: scale(1.05);
     }
   }
 }
@@ -96,17 +95,16 @@
   width: 300px;
   margin-right: 20px;
   background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid $bg-purple;
 
   @include for-tablet-landscape-up {
-    margin: 0px 25px 0 0px;
+    margin: 0px 50px 0 0px;
     width: 400px;
-    height: 350px;
+    height: 300px;
     :hover {
       transform: scale(1);
+      
     }
   }
 }
@@ -115,31 +113,34 @@
   justify-content: space-between;
 }
 .ce-card-subheader {
-  color: black;
-  background-color: $bg-green;
+  color: white;
+  background-color: $bg-purple;
   height: 30px;
   font-weight: 600;
   width: 45vw;
-  border-radius: 4px;
-  margin: auto 0;
+  border-radius: 10px;
+  margin: 0;
 
   @include for-tablet-landscape-up {
-    height: 25px;
+    height: 30px;
     width: 145px;
     margin: 15px 0 0 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
     :hover {
-      background-color: $bg-green;
-      padding: 3px;
-      margin: 0;
+      background-color: $nutshell-green;
+      border-radius: .5rem;
     }
   }
+  .subheader-text {
+    font-family: "Montserrat", SemiBold;
+    text-align: center;
+    height: 30px;
+    padding-top: 2%;
+    
+   
+  }
 }
-.subheader-text {
-  font-family: "Montserrat", SemiBold;
-  text-align: center;
-  margin: 4px auto;
-}
+
 .ce-card-postdate {
   margin: auto 3vw;
   color: $nutshell_purple;
@@ -154,15 +155,15 @@
   }
 }
 .ce-card-main {
-  font-size: 16px;
+  font-size: 14px;
   margin: 1.5vh 3vw 0 3vw;
   height: 225px;
   overflow: scroll;
   @include for-tablet-landscape-up {
     margin: 15px 20px 0 20px;
     height: 100%;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     overflow: auto;
     /* this will hide the scrollbar in mozilla based browsers */
@@ -173,6 +174,7 @@
     ::-webkit-scrollbar {
       display: none;
       width: 0 !important;
+      background-color: white;
     }
   }
 }

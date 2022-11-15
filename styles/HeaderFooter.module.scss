@@ -83,8 +83,9 @@
 }
 .headerlogo {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin:auto;
   margin-right: 5px;
 }
 .headertitle {
@@ -92,8 +93,10 @@
   width: auto;
   font-weight: bold;
   margin: auto;
+  padding-bottom: 1%;
   font-family: "Raleway", sans-serif;
   cursor: pointer;
+  
 }
 .headerbuttonslist {
   display: none;
@@ -185,8 +188,7 @@
   display: none;
   @include for-tablet-landscape-up {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
-    height: 80px;
+    height: 85px;
     width: 100%;
     max-width: 100vw;
     display: flex;
@@ -194,7 +196,6 @@
     align-items: center;
     border-top: 1px solid #eaeaea;
     background-color: #ffffff;
-    color: #7a8398;
   }
 }
 .footer-left {
@@ -208,6 +209,10 @@
   height: auto;
   align-content: center;
   justify-content: center;
+  color: #7a8398;
+  :hover{
+    color:$nutshell_purple
+  } 
 }
 .footer-title {
   font-size: 20px;
@@ -216,6 +221,18 @@
   margin: auto;
   font-family: "Raleway", sans-serif;
   cursor: pointer;
+  color: #7a8398;
+  :hover{
+    color:$nutshell_purple
+  } 
+}
+.copyright{
+  padding-Left: 20px;
+  margin: 5px;
+  color: #7a8398;
+  :hover{
+    color:$nutshell_purple
+  } 
 }
 .footer-logo {
   height: 30px;
@@ -236,7 +253,11 @@
 }
 .footerbuttons {
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 600;
+  color: #7a8398;
+  :hover{
+    color:$nutshell_purple
+  }
 }
 
 /*** Mobile Menu Extensions *****/

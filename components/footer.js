@@ -23,7 +23,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <p style={{ paddingLeft: "20px", margin: "5px" }}>Copyright 2022</p>
+        <p className={styles["copyright"]}>Copyright 2022</p>
       </div>
 
       <ul className={styles["footerbuttonslist"]}>
