@@ -124,7 +124,7 @@ export default function HeaderMenu() {
           <Link href="/academic">Academic</Link>
         </li>
         <li className={styles["headerbuttons"]}>
-          <Link href="/readinglist">Reading List</Link>
+          <Link href="/login">Reading List</Link>
         </li>
         <li className={styles["headerbuttons"]}>
           <Link href="/about">About</Link>

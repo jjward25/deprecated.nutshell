@@ -2,6 +2,7 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import validator from 'validator'
 
+
 const userSchema = new mongoose.Schema({
     email: {
         type: String,
@@ -20,14 +21,8 @@ const userSchema = new mongoose.Schema({
         default: Date.now
     },
     readingList: {
-        type: Object,
-        properties: {
-            
-        }
-        "postName": {
-            "subheader1": ["bullet1", "bullet2"],
-            "subheader2": ["bullet1", "bullet2"]
-        }
+        type: Array,
+        required: false        
     }
 })
 

@@ -16,7 +16,7 @@ export default function Home() {
     },
     {
       title: 'Social',
-      content: 'Content for section 3'
+      content: 'Public school reform, Real Estate reform'
     },
     {
       title: 'Foreign Policy',
