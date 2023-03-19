@@ -6,23 +6,30 @@ export default function Home() {
   const accordionItems = [
     {
       title: 'Campaign Finance',
-      content: 'Content for section 1'
+      content: "Everyone's absolute priority should be cleaning up our elections. No one should vote for a candidate who doesn't support and vote for serious campaign finance reforms.  Some examples:",
+      bullet1: "Regulation: AI, Crypto, Brain-Computer Interfaces... the octogenarians running the country are too far behind and apparently unable to do their job in the modern world.  We are at a turning point for humanity where progress is basically logarithmic, we must get a grip on that."
     },
     {
-      title: 'Economics',
-      content: 'Redistribution, No ceiling but 100% Estate Tax, Limited Profits, Strong Anti-Trust particularly in vulnerable industries like cloud computing and telecoms (though maybe not defense?), Thomas Picketty (Anti-Trickle Down), Strong Unions and Labor Rights (PTO), Limit CEO Pay.  Where do GOPers think trickle-down and perpetually growing inequality will take us?'
+      title: 'Economics: Need to Restore Innovation Economy',
+      content: "The stock market is unhinged from fundamentals and currently provides no benefit to many Americans. Management practices are a sham, and inequality is far beyond any logical boundary. Just look at Jeff Bezos trying to copy everyone... Alexa (from Google voice), Blue Origin (from SpaceX), and trying to make a Fire phone that failed for the exact same reaosn the Windows phone failed.  These people are not geniuses and to allow wealth to concentrate this much and be spent on their vanity projects is insane and insanely wasteful.",
+      bullet1: 'Redistribution, No ceiling but 100% Estate Tax, Limited Profits, Strong Anti-Trust particularly in vulnerable industries like cloud computing and telecoms (though maybe not defense?), Thomas Picketty (Anti-Trickle Down), Strong Unions and Labor Rights (PTO), Limit CEO Pay.  Where do GOPers think trickle-down and perpetually growing inequality will take us?'
     },
     {
       title: 'Social',
       content: 'Content for section 3'
+    },
+    {
+      title: 'Foreign Policy',
+      content: 'Divide and conquer, innovate at home, selectively share patents with the global south.  Be the anti Belt+Road Initiative, be generous.'
     }
   ];
 
   return (
     <>
-      <header className="bg-blue-500 text-white pt-20 pl-10">
+      <header className="bg-blue-500 text-white pt-20 pl-10 pr-10">
         <h1 className="text-2xl">My Politics</h1>
-        <p className="pt-4"> As the founder of a news website, I think it's important that you're aware of my personal ideology. While I certainly strive to provide objective information, biases creep in and by providing this information you can be more informed and understand where any perceived biases are coming from.</p>
+        <p className="pt-4">As the founder of a news website, I think it's important that you're aware of my personal ideology. While I certainly strive to provide objective information, biases creep in and by providing this information you can be more informed and understand where any perceived biases are coming from.</p>
+        <p className="pt-4">My politics are driven by what I feel would get us to a society where a majority-middle class can afford annual vacations abroad and preventive care doctors visits.</p>
       </header>
 
       <main className="p-10 h-[75vh]" >
@@ -47,7 +54,7 @@ export default function Home() {
               </svg>
             </button>
             {openIndex === index && (
-              <div className="p-4 bg-white">{item.content}</div>
+              <div className="p-4 bg-white">{item.content},<li className="pt-2">{item.bullet1}</li></div>
             )}
           </div>
         ))}
