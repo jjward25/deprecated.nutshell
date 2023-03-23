@@ -96,7 +96,7 @@ export default function HeaderMenu() {
               <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
-              <Link href="/readinglist">ReadingList</Link>
+              <Link href="/login">Reading List</Link>
             </div>
           </div>
 
