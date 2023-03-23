@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/HeaderFooter.module.scss";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Footer() {
   return (
@@ -13,7 +13,8 @@ export default function Footer() {
                 src="/acorn-grey.svg"
                 alt="Nutshell News Logo"
                 className="headerlogo"
-                layout="fill"
+                height="30"
+                width="30"
               />
             </span>
           </Link>

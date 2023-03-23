@@ -61,7 +61,8 @@
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   width: 300px;
   min-height: 50px;
   line-height: 30px;
@@ -90,6 +91,7 @@
 .home-post-card-open {
   background-color: #ffffff;
   border-radius: 10px 10px 0 0;
+  padding-top: 2px;
   overflow: hidden;
   display: flex;
   width: 300px;

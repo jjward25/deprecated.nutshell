@@ -18,7 +18,7 @@ export default function HomePostCard(props) {
     <div className={styles[`full-home-card${rotateChevron ? "-open" : ""}`]}>
       <div className={styles[`home-post-card${rotateChevron ? "-open" : ""}`]}>
         <div className={styles["post-card-bookmark"]}>
-          <Image src="/logo-wide.png" alt="acron" layout="fill" />
+          <Image src="/logo-wide.png" alt="acron" fill />
         </div>
 
         <Link
@@ -28,6 +28,7 @@ export default function HomePostCard(props) {
           }}
           as={props.postName}
           passHref
+          className='w-full'
         >
           <div className={styles["post-title"]}>{props.postName}</div>
         </Link>
@@ -36,7 +37,7 @@ export default function HomePostCard(props) {
           className={styles[`post-card-carot${rotateChevron ? "-open" : ""}`]}
           onClick={() => shExtend()}
         >
-          <Image src="/arrow-right.png" alt="carot" layout="fill" />
+          <Image src="/arrow-right.png" alt="carot" fill />
         </div>
       </div>
 

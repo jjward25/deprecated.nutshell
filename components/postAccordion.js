@@ -24,7 +24,7 @@ const Accordion = ({ heading, content }) => {
             styles[`subheader-image-wrap${rotateChevron ? "-open" : ""}`]
           }
         >
-          <Image src="/arrow-right.png" alt="carot" layout="fill" />
+          <Image src="/arrow-right.png" alt="carot" fill />
         </div>
       </div>
       {isActive && <div className={styles["accordion-content"]}>{content}</div>}

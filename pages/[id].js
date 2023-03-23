@@ -83,7 +83,7 @@ export default function Article(props) {
                           className={styles["article-bullet-text"]}
                         >
                           <span className={styles["bullet-image-wrap"]}>
-                            <Image src="/acorn.svg" alt="acorn" layout="fill" />
+                            <Image src="/acorn.svg" alt="acorn" fill />
                           </span>
                           <div className={styles["article-bullet-text-wrap"]}>
                             <div className={styles["article-bullet-main"]}>
@@ -113,22 +113,22 @@ export default function Article(props) {
           <div className={styles["post-social-icons"]}>
             <div className={styles['post-icon-bg"']}>
               <span className={styles["post-icon-wrap"]}>
-                <Image src="/bookmark-false.svg" alt="bookmark" layout="fill" />
+                <Image src="/bookmark-false.svg" alt="bookmark" fill />
               </span>
             </div>
             <div className={styles['post-icon-bg"']}>
               <span className={styles["post-icon-wrap"]}>
-                <Image src="/share.png" alt="share" layout="fill" />
+                <Image src="/share.png" alt="share" fill />
               </span>
             </div>
             <div className={styles['post-icon-bg"']}>
               <span className={styles["post-icon-wrap"]}>
-                <Image src="/comment.png" alt="comment" layout="fill" />
+                <Image src="/comment.png" alt="comment" fill />
               </span>
             </div>
             <div className={styles['post-icon-bg"']}>
               <span className={styles["post-icon-wrap"]}>
-                <Image src="/feedback.png" alt="feedback" layout="fill" />
+                <Image src="/feedback.png" alt="feedback" fill />
               </span>
             </div>
           </div>

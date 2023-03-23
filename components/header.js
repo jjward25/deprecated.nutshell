@@ -31,9 +31,9 @@ export default function HeaderMenu() {
         className={styles["headerlogowrap-desktop"]}
         onClick={() => mobileMenu()}
       >
-        <Link href="/" passHref>
+        <Link href="/" passHref className="h-full m-auto pb-1">
           <p className={styles["headerlogo"]}>
-            <Image src="/acorn.svg" alt="Nutshell News Logo" layout="fill" />
+            <Image src="/acorn.svg" alt="Nutshell News Logo" fill/>
           </p>
         </Link>
         <Link href="/" passHref>
@@ -45,7 +45,7 @@ export default function HeaderMenu() {
         onClick={() => mobileMenu()}
       >
         <p className={styles["headerlogo"]}>
-          <Image src="/acorn.svg" alt="Nutshell News Logo" layout="fill" />
+          <Image src="/acorn.svg" alt="Nutshell News Logo" fill />
         </p>
 
         <h1 className={styles["headertitle"]}>nutshell news</h1>
@@ -57,7 +57,7 @@ export default function HeaderMenu() {
             onClick={() => mobileMenu()}
           >
             <span className={styles["extension-mobile-wrap"]}>
-              <Image src="/acorn.svg" alt="acorn" layout="fill" />
+              <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
               <Link href="/">News</Link>
@@ -69,7 +69,7 @@ export default function HeaderMenu() {
             onClick={() => mobileMenu()}
           >
             <span className={styles["extension-mobile-wrap"]}>
-              <Image src="/acorn.svg" alt="acorn" layout="fill" />
+              <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
               <Link href="/life">Life</Link>
@@ -81,7 +81,7 @@ export default function HeaderMenu() {
             onClick={() => mobileMenu()}
           >
             <span className={styles["extension-mobile-wrap"]}>
-              <Image src="/acorn.svg" alt="acorn" layout="fill" />
+              <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
               <Link href="/academic">Academic</Link>
@@ -93,7 +93,7 @@ export default function HeaderMenu() {
             onClick={() => mobileMenu()}
           >
             <span className={styles["extension-mobile-wrap"]}>
-              <Image src="/acorn.svg" alt="acorn" layout="fill" />
+              <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
               <Link href="/readinglist">ReadingList</Link>
@@ -105,7 +105,7 @@ export default function HeaderMenu() {
             onClick={() => mobileMenu()}
           >
             <span className={styles["extension-mobile-wrap"]}>
-              <Image src="/acorn.svg" alt="acorn" layout="fill" />
+              <Image src="/acorn.svg" alt="acorn" fill />
             </span>
             <div className={styles["extension-mobile-text"]}>
               <Link href="/about">About</Link>
@@ -133,7 +133,7 @@ export default function HeaderMenu() {
 
       <div className={styles["headersearchwrap"]}>
         <span className={styles["search-icon-wrap"]}>
-          <Image src="/searchicon.svg" alt="search" layout="fill" />
+          <Image src="/searchicon.svg" alt="search" fill />
         </span>
         <form className={styles["headersearchtext-wrap"]} action="/search">
           <input

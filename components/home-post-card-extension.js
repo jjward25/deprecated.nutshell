@@ -6,7 +6,7 @@ export default function HomePostCardExtension(props) {
     <div className={styles["home-post-card-extension"]}>
       <div className={styles["extension-subheader"]}>
         <span className={styles["extension-logo-wrap"]}>
-          <Image src="/acornPurp.png" alt="acorn" layout="fill" />
+          <Image src="/acornPurp.png" alt="acorn" fill />
         </span>
         <div className={styles["extension-subheader-text"]}>
           {props.subheader}

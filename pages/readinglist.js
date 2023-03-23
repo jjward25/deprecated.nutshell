@@ -29,17 +29,17 @@ export default function ReadingList() {
                       <Image
                         src="/bookmark-false.svg"
                         alt="bookmark"
-                        layout="fill"
+                        fill
                       />
                     </div>
                     <span className={styles["rl-icon"]}>
-                      <Image src="/share.png" alt="share" layout="fill" />
+                      <Image src="/share.png" alt="share" fill />
                     </span>
                     <span className={styles["rl-icon"]}>
                       <Image
                         src="/remove-icon.svg"
                         alt="share"
-                        layout="fill"
+                        fill
                       />
                     </span>
                   </div>
@@ -47,7 +47,7 @@ export default function ReadingList() {
 
                 <div className={styles["article-bullet-text"]}>
                   <div className={styles["bullet-image-wrap"]}>
-                    <Image src="/acorn.svg" alt="acorn" layout="fill" />
+                    <Image src="/acorn.svg" alt="acorn" fill />
                   </div>
                   <div className={styles["bullet-text-wrap"]}>
                     <div className={styles["article-bullet-main"]}>
@@ -60,7 +60,7 @@ export default function ReadingList() {
                 </div>
                 <div className={styles["article-bullet-text"]}>
                   <div className={styles["bullet-image-wrap"]}>
-                    <Image src="/acorn.svg" alt="acorn" layout="fill" />
+                    <Image src="/acorn.svg" alt="acorn" fill />
                   </div>
                   <div className={styles["bullet-text-wrap"]}>
                     <div className={styles["article-bullet-main"]}>
