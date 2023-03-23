@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/HeaderFooter.module.scss";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Footer() {
   return (
