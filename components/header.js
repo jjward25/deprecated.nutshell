@@ -24,6 +24,7 @@ export default function HeaderMenu() {
     //console.log(searchValue.toLowerCase());
     //console.log(localStorage.getItem("searchTerm"));
   };
+  
 
   return (
     <div className={styles["headerwrap"]}>
