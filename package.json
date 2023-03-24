@@ -24,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-update": "^0.4.4",
-    "sass": "^1.49.9",
+    "sass": "^1.60.0",
     "swr": "^1.2.2",
     "tls": "0.0.1",
     "validator": "^13.9.0",
